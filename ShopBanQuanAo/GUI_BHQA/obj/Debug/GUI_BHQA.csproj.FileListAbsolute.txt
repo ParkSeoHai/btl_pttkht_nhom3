@@ -1,0 +1,17 @@
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.exe.config
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.exe
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.pdb
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\BUS_BHQA.exe
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DTO_BHQA.exe
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\BUS_BHQA.pdb
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\BUS_BHQA.exe.config
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DTO_BHQA.pdb
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DTO_BHQA.exe.config
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.AssemblyReference.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.SuggestedBindingRedirects.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Properties.Resources.resources
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.GenerateResource.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.CopyComplete
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.exe
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.pdb
