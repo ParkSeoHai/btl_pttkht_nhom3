@@ -15,6 +15,7 @@ namespace DTO_BHQA
         protected string connStringHai = @"Data Source=DELL-VIP-PRO;Initial Catalog=ShopQuanAo;Integrated Security=True";
         
         // Connect của Duy
+        //fdr
 
         // Connect của Mạnh
         public static SqlConnection chuoiKetNoiCua_XuanManh()
