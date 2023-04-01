@@ -13,7 +13,13 @@ namespace DTO_BHQA
     {
         // Connect của Hải
         protected string connStringHai = @"Data Source=DELL-VIP-PRO;Initial Catalog=ShopQuanAo;Integrated Security=True";
-        
+        public static SqlConnection chuoiKetNoiCua_Hai()
+        {
+            string connStringHai2 = @"Data Source=DELL-VIP-PRO;Initial Catalog=ShopQuanAo;Integrated Security=True";
+            SqlConnection sqlCon = new SqlConnection(connStringHai2);
+            return sqlCon;
+        }
+
         // Connect của Duy
 
         // Connect của Mạnh
