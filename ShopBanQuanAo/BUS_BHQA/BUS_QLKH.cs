@@ -48,9 +48,19 @@ namespace BUS_BHQA
             return false;
         }
         // Tìm kiếm theo mã KH
-        public KhachHang TimKiemKH_MaKH(string MaKH)
+        public DataTable TimKiemKH_MaKH(string txtMaKH)
         {
-            return DAL_QLKH.TimKiemKH_MaKH(MaKH);
+            return DAL_QLKH.TimKiemKH_MaKH(txtMaKH);
+        }
+        // Tìm kiếm theo tên khách hàng
+        public DataTable TimKiemKH_TenKH(string txtMaKH)
+        {
+            return DAL_QLKH.TimKiemKH_TenKH(txtMaKH);
+        }
+        // Tìm kiếm theo loại khách hàng
+        public DataTable TimKiemKH_LoaiKH(string txtMaKH)
+        {
+            return DAL_QLKH.TimKiemKH_LoaiKH(txtMaKH);
         }
     }
 }

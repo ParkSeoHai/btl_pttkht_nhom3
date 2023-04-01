@@ -21,7 +21,10 @@ namespace DTO_BHQA
         bool ThemKH(KhachHang KH);
         bool SuaKH(KhachHang KH);
         bool XoaKH(KhachHang KH);
-        KhachHang TimKiemKH_MaKH(string MaKH);
+        DataTable TimKiemKH(string query, string variable, string txtTimKiem);
+        DataTable TimKiemKH_MaKH(string txtMaKH);
+        DataTable TimKiemKH_TenKH(string txtTenKH);
+        DataTable TimKiemKH_LoaiKH(string txtLoaiKH);
         void ThongKeSpBanChay();
         void ThongKeDonDatHang();
         void ThongKeSpMoi();
@@ -106,32 +109,44 @@ namespace DTO_BHQA
             finally { conn.Close(); }
             return false;
         }
-        // Tìm kiếm Khách hàng theo mã kh
-        public KhachHang TimKiemKH_MaKH(string MaKH)
+        // Hàm tìm kiếm khách hàng chung: Hàm nhận 3 tham số lần lượt là (Câu lệnh truy vấn, Biến trong lệnh điều kiện, giá trị cần tìm)
+        public DataTable TimKiemKH(string query, string variable, string txtTimKiem)
         {
-            KhachHang KH = new KhachHang();
-            string querySelectMaKH = $"Select * from KhachHang where MaKH = {MaKH}";
+            DataTable dt = new DataTable();
             SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand(querySelectMaKH, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    KH.MaKH = reader.GetString(0);
-                    KH.ten = reader.GetString(1);
-                    KH.gioiTinh = reader.GetString(2);
-                    KH.ngaySinh = reader.GetString(3);
-                    KH.diaChi = reader.GetString(4);
-                    KH.sdt = reader.GetString(5);
-                    KH.LoaiKH = reader.GetString(6);
-                    KH.SoTien = reader.GetDouble(7);
-                }
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue($"{variable}", txtTimKiem);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
             }
             catch { }
             finally { conn.Close(); }
-            return KH;
+            if (dt.Rows.Count <= 0)
+            {
+                dt = null;
+            }
+            return dt;
+        }
+        // Tìm kiếm Khách hàng theo mã kh
+        public DataTable TimKiemKH_MaKH(string txtMaKH)
+        {
+            string querySelectMaKH = "Select * from KhachHang where MaKH = @MaKH";
+            return TimKiemKH(querySelectMaKH, "MaKH", txtMaKH);
+        }
+        // Tìm kiếm theo tên khách hàng
+        public DataTable TimKiemKH_TenKH(string txtTenKH)
+        {
+            string queryTimKiemTenKH = "Select * from KhachHang where HoTen = @HoTen";
+            return TimKiemKH(queryTimKiemTenKH, "HoTen", txtTenKH);
+        }
+        // Tìm kiếm theo loại khách hàng
+        public DataTable TimKiemKH_LoaiKH(string txtLoaiKH)
+        {
+            string querySelectMaKH = "Select * from KhachHang where LoaiKH = @LoaiKH";
+            return TimKiemKH(querySelectMaKH, "LoaiKH", txtLoaiKH);
         }
         public void ThongKeSpBanChay() { }
         public void ThongKeDonDatHang() { }

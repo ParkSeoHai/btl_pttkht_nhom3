@@ -28,7 +28,7 @@ namespace GUI_BHQA
         private void frmQLKH_Load(object sender, EventArgs e)
         {
             cbTimKiem.Text = cbTimKiem.Items[0].ToString();
-            Load_dtGridQLKH();
+            Load_dtGridQLKH(BUS_QLKH.getData());
         }
 
         // Lấy giá trị các row khi click vào dataGrid
@@ -65,10 +65,12 @@ namespace GUI_BHQA
         }
 
         // Hàm Load dataGridView
-        public void Load_dtGridQLKH()
+        public void Load_dtGridQLKH(DataTable dt)
         {
             dtGridQLKH.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtGridQLKH.DataSource = BUS_QLKH.getData();
+            dtGridQLKH.DataSource = null;
+            dtGridQLKH.Refresh();
+            dtGridQLKH.DataSource = dt;
         }
 
         // Placeholder text
@@ -151,11 +153,11 @@ namespace GUI_BHQA
                 {
                     MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear_TextBox();
-                    Load_dtGridQLKH();
+                    Load_dtGridQLKH(BUS_QLKH.getData());
                 }
                 else
                 {
-                    MessageBox.Show("Thêm không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thêm không thành công, trùng mã khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             } else
             {
@@ -173,7 +175,7 @@ namespace GUI_BHQA
                 {
                     MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear_TextBox();
-                    Load_dtGridQLKH();
+                    Load_dtGridQLKH(BUS_QLKH.getData());
                 }
                 else
                 {
@@ -195,7 +197,7 @@ namespace GUI_BHQA
                 {
                     MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear_TextBox();
-                    Load_dtGridQLKH();
+                    Load_dtGridQLKH(BUS_QLKH.getData());
                 }
                 else
                 {
@@ -203,30 +205,37 @@ namespace GUI_BHQA
                 }
             }
         }
+        // Hàm tìm kiếm chung
+        public void TimKiem(DataTable dt)
+        {
+            if (dt != null)
+            {
+                Load_dtGridQLKH(dt);
+                MessageBox.Show($"Tìm thấy {dt.Rows.Count} kết quả", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy kết quả nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         // Sự kiện tìm kiếm khách hàng
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            KhachHang kh = new KhachHang("KH0010", "Nguyễn Văn Hải", "Nam", "20/10/2002", "Hai Duong", "02929223", "VIP", 101010);
-            
-
-            /*if (cbTimKiem.Text == "Tìm kiếm theo Mã KH")
+            if (cbTimKiem.Text == "Tìm kiếm theo Mã KH")
             {
-                if(BUS_QLKH.TimKiemKH_MaKH(txtTimKiem.Text) != null)
-                {
-                    dtGridQLKH.DataSource = BUS_QLKH.TimKiemKH_MaKH(txtTimKiem.Text);
-                } else
-                {
-                    MessageBox.Show("Không tìm thấy");                    
-                }
+                DataTable dt = BUS_QLKH.TimKiemKH_MaKH(txtTimKiem.Text);
+                TimKiem(dt);
             }
             else if (cbTimKiem.Text == "Tìm kiếm theo Họ tên")
             {
-                MessageBox.Show("Tên KH");
+                DataTable dt = BUS_QLKH.TimKiemKH_TenKH(txtTimKiem.Text);
+                TimKiem(dt);
             }
             else if (cbTimKiem.Text == "Tìm kiếm theo Loại KH")
             {
-                MessageBox.Show("Loại KH");
-            }*/
+                DataTable dt = BUS_QLKH.TimKiemKH_LoaiKH(txtTimKiem.Text);
+                TimKiem(dt);
+            }
         }
     }
 }

@@ -51,9 +51,19 @@ namespace DAL_BHQA
             return false;
         }
         // Tìm kiếm khách hàng theo mã kh
-        public KhachHang TimKiemKH_MaKH(string MaKH)
+        public DataTable TimKiemKH_MaKH(string txtMaKH)
         {
-            return QuanLy.TimKiemKH_MaKH(MaKH);        
+            return QuanLy.TimKiemKH_MaKH(txtMaKH);
+        }
+        // Tìm kiếm theo tên khách hàng
+        public DataTable TimKiemKH_TenKH(string txtMaKH)
+        {
+            return QuanLy.TimKiemKH_TenKH(txtMaKH);
+        }
+        // Tìm kiếm theo loại khách hàng
+        public DataTable TimKiemKH_LoaiKH(string txtMaKH)
+        {
+            return QuanLy.TimKiemKH_LoaiKH(txtMaKH);
         }
     }
 }
