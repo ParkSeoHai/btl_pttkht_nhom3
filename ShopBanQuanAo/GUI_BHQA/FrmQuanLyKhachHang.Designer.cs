@@ -98,6 +98,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.GreenYellow;
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txtTimKiem);
             this.groupBox2.Controls.Add(this.cbTimKiem);
             this.groupBox2.Controls.Add(this.btnXoa);
@@ -108,7 +109,6 @@
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtSoTien);
-            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txtLoaiKH);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtSDT);
@@ -147,7 +147,8 @@
             this.cbTimKiem.FormattingEnabled = true;
             this.cbTimKiem.Items.AddRange(new object[] {
             "Tìm kiếm theo Mã KH",
-            "Tìm kiếm theo Họ tên"});
+            "Tìm kiếm theo Họ tên",
+            "Tìm kiếm theo Loại KH"});
             this.cbTimKiem.Location = new System.Drawing.Point(754, 327);
             this.cbTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTimKiem.Name = "cbTimKiem";
@@ -170,6 +171,7 @@
             this.btnXoa.Text = "Xóa ";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSearch
             // 
@@ -187,6 +189,7 @@
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label3
             // 
@@ -216,6 +219,7 @@
             this.btnSua.Text = "Sửa  ";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // label4
             // 
@@ -352,6 +356,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label10.Location = new System.Drawing.Point(749, 246);
@@ -424,12 +429,13 @@
             this.dtGridQLKH.BackgroundColor = System.Drawing.Color.White;
             this.dtGridQLKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtGridQLKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridQLKH.Location = new System.Drawing.Point(0, 44);
+            this.dtGridQLKH.Location = new System.Drawing.Point(3, 44);
             this.dtGridQLKH.Name = "dtGridQLKH";
             this.dtGridQLKH.RowHeadersWidth = 62;
             this.dtGridQLKH.RowTemplate.Height = 28;
-            this.dtGridQLKH.Size = new System.Drawing.Size(1191, 214);
+            this.dtGridQLKH.Size = new System.Drawing.Size(1188, 214);
             this.dtGridQLKH.TabIndex = 0;
+            this.dtGridQLKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridQLKH_CellClick);
             // 
             // frmQLKH
             // 
