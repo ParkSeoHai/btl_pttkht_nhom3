@@ -15,3 +15,7 @@ D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.Core
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.CopyComplete
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.exe
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.pdb
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmQLKH.resources
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.pdb
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe.config
