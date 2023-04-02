@@ -31,7 +31,7 @@ namespace DTO_BHQA
         public string LoaiKH { get => _LoaiKH; set => _LoaiKH = value; }
         public double SoTien { get => _SoTien; set => _SoTien = value; }
         public KhachHang() { }
-        public KhachHang(string MaKH, string ten, string ngaySinh, string diaChi, string sdt, string gioiTinh, string LoaiKH, double SoTien) : base(ten, ngaySinh, diaChi, sdt, gioiTinh)
+        public KhachHang(string MaKH, string ten, string gioiTinh, string ngaySinh, string diaChi, string sdt, string LoaiKH, double SoTien) : base(ten, ngaySinh, diaChi, sdt, gioiTinh)
         {
             _MaKH = MaKH;
             _LoaiKH = LoaiKH;

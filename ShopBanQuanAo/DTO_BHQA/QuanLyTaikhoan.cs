@@ -9,16 +9,16 @@ namespace DTO_BHQA
     public class QuanLyTaikhoan
     {
         private string _MaQL;
-        private string _IDTK;
+        private string _TenTK;
 
         public string MaQL { get => _MaQL; set => _MaQL = value; }
-        public string IDTK { get => _IDTK; set => _IDTK = value; }
+        public string TenTK { get => _TenTK; set => _TenTK = value; }
 
         public QuanLyTaikhoan() { }
-        public QuanLyTaikhoan(string MaQL, string IDTK) 
+        public QuanLyTaikhoan(string MaQL, string TenTK) 
         { 
             _MaQL = MaQL;
-            _IDTK = IDTK;
+            _TenTK = TenTK;
         }
     }
 }

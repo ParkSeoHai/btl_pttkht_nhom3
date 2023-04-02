@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Form_Trang_Chu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +66,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Trang_Chu.resx">
       <DependentUpon>Form_Trang_Chu.cs</DependentUpon>
+=======
+    <Compile Include="FrmQuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuanLyKhachHang.Designer.cs">
+      <DependentUpon>FrmQuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmQuanLyKhachHang.resx">
+      <DependentUpon>FrmQuanLyKhachHang.cs</DependentUpon>
+>>>>>>> 122c72e9125186008a53f9f243513d1fadcaa193
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="BUS_QLGH.cs" />
+=======
+    <Compile Include="BUS_QLKH.cs" />
+>>>>>>> 122c72e9125186008a53f9f243513d1fadcaa193
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
