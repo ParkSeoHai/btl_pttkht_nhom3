@@ -15,9 +15,11 @@ namespace DTO_BHQA
     interface IQuanLy
     {
         void DangNhap();
-        void ThemSp();
-        void SuaSp();
-        void XoaSp();
+        bool QuanLySP(SanPham SP, string query);
+        bool ThemSp(SanPham SP);
+        bool SuaSp(SanPham SP);
+        bool XoaSp(SanPham SP);
+        bool QuanLyKH(KhachHang KH, string query);
         bool ThemKH(KhachHang KH);
         bool SuaKH(KhachHang KH);
         bool XoaKH(KhachHang KH);
@@ -40,9 +42,54 @@ namespace DTO_BHQA
         }
 
         public void DangNhap() { }
-        public void ThemSp() { }
-        public void SuaSp() { }
-        public void XoaSp() { }
+        // Phương thức thêm, sửa, xóa sản phẩm chung
+        public bool QuanLySP(SanPham SP, string query)
+        {
+            SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("MaSP", SP.MaSp);
+                cmd.Parameters.AddWithValue("TenSP", SP.TenSp);
+                cmd.Parameters.AddWithValue("GiaSP", SP.GiaSp);
+                cmd.Parameters.AddWithValue("DonViTinh", SP.DonViTinh);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch { }
+            finally { conn.Close(); }
+            return false;
+        }
+        // Phương thức thêm sản phẩm
+        public bool ThemSp(SanPham SP) {
+            string queryInsert = "Insert into SanPham values (@MaSP, @TenSP, @GiaSP, @DonViTinh)";
+            if(QuanLySP(SP, queryInsert))
+            {
+                return true;
+            }
+            return false;
+        }
+        // Phương thức sửa sản phẩm
+        public bool SuaSp(SanPham SP) {
+            string queryUpdate = "Update SanPham set TenSP = @TenSP, GiaSP = @GiaSP, DonViTinh = @DonViTinh where MaSP = @MaSP";
+            if(QuanLySP(SP, queryUpdate))
+            {
+                return true;
+            }
+            return false;
+        }
+        // Phương thức xóa sản phẩm
+        public bool XoaSp(SanPham SP) {
+            string queryDelete = "Delete SanPham where MaSP = @MaSP";
+            if (QuanLySP(SP, queryDelete))
+            {
+                return true;
+            }
+            return false;
+        }
         // Thêm khách hàng
         public bool ThemKH(KhachHang KH) {
             string queryInsert = "Insert into KhachHang values (@MaKH, @Ten, @GioiTinh, @NgaySinh, @DiaChi, @SDT, @LoaiKH, @SoTien)";
