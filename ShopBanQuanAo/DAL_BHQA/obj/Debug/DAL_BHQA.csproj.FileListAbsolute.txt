@@ -12,3 +12,17 @@ D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.csproj.Core
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.csproj.CopyComplete
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.exe
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.pdb
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\bin\Debug\DAL_BHQA.exe.config
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\bin\Debug\DAL_BHQA.exe
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\bin\Debug\DAL_BHQA.pdb
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\bin\Debug\DTO_BHQA.exe
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\bin\Debug\DTO_BHQA.pdb
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\bin\Debug\DTO_BHQA.exe.config
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.csproj.AssemblyReference.cache
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.csproj.SuggestedBindingRedirects.cache
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.Properties.Resources.resources
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.csproj.GenerateResource.cache
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.csproj.CoreCompileInputs.cache
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.csproj.CopyComplete
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.exe
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\DAL_BHQA\obj\Debug\DAL_BHQA.pdb
