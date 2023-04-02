@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSP.Designer.cs">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmQuanLyKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmQLSP.resx">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLyKhachHang.resx">
       <DependentUpon>FrmQuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
