@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data.SqlClient;
+using System.Data;
 namespace DTO_BHQA
 {
     interface IKhachHang
     {
         void DangNhap();
         void DangKy();
-        void ThemSpVaoGioHang();
+        bool ThemSpVaoGioHang(SanPham sanPham);
         void SuaSpTrongGioHang();
         void XoaSpTrongGioHang();
         void TimKiemSp();
@@ -38,7 +40,19 @@ namespace DTO_BHQA
 
         public void DangNhap() { }
         public void DangKy() { }
-        public void ThemSpVaoGioHang() { }
+        public bool ThemSpVaoGioHang(SanPham sanPham) {
+            string s = $"insert into SANPHAM values('{sanPham.MaSp}', N'{sanPham.TenSp}', {float.Parse(sanPham.GiaSp)}, N'{sanPham.DonViTinh}')";
+            SqlCommand sqlCMD = new SqlCommand();
+            sqlCMD.CommandType = CommandType.Text;
+            sqlCMD.CommandText = s;
+            sqlCMD.Connection = DBConnect.chuoiKetNoiCua_XuanManh();
+            int check = sqlCMD.ExecuteNonQuery();
+            if (check > 0)
+            {
+                return true;
+            }
+            return false;
+        }
         public void SuaSpTrongGioHang() { }
         public void XoaSpTrongGioHang() { }
         public void TimKiemSp() { }
