@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Security.Policy;
-
 namespace DTO_BHQA
 {
     public class DBConnect
