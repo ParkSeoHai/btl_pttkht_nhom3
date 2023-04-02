@@ -4,3 +4,6 @@
 
 /ShopBanQuanAo/BUS_BHQA/BUS_QLSP.cs
 /.gitignore
+/ShopBanQuanAo/GUI_BHQA/frmQLSP.resx
+/ShopBanQuanAo/GUI_BHQA/frmQLSP.Designer.cs
+/ShopBanQuanAo/GUI_BHQA/frmQLSP.cs

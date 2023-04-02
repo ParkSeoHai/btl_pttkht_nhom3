@@ -90,7 +90,7 @@ namespace GUI_BHQA
         }
 
         // Hàm check text box 
-        public bool Check_TextBox()
+        private bool Check_TextBox()
         {
             if(string.IsNullOrWhiteSpace(txtMKH.Text) || string.IsNullOrWhiteSpace(txtTenKH.Text) || 
                 string.IsNullOrWhiteSpace(txtDiaChi.Text) || string.IsNullOrWhiteSpace(txtSDT.Text) ||
@@ -104,7 +104,7 @@ namespace GUI_BHQA
         }
 
         // Hàm Clear text box
-        public void Clear_TextBox()
+        private void Clear_TextBox()
         {
             txtMKH.Text = "";
             txtTenKH.Text = "";
@@ -117,7 +117,7 @@ namespace GUI_BHQA
         }
 
         // Hàm tạo đối tượng khách hàng
-        public KhachHang Create_KH()
+        private KhachHang Create_KH()
         {
             string gioiTinh = radioNam.Text;
             if (radioNu.Checked)
@@ -142,14 +142,21 @@ namespace GUI_BHQA
             KhachHang KH = new KhachHang(txtMKH.Text, txtTenKH.Text, gioiTinh, ngaySinh, txtDiaChi.Text, txtSDT.Text, txtLoaiKH.Text, soTien);
             return KH;
         }
+        // Hàm tạo đối tượng quản lý khách hàng
+        private QuanLyKhachHang Create_QLKH()
+        {
+            QuanLyKhachHang QLKH = new QuanLyKhachHang("QL001", txtMKH.Text);
+            return QLKH;
+        }
 
         // Sự kiện thêm khách hàng
         private void btnThem_Click(object sender, EventArgs e)
         {
-            KhachHang KH = Create_KH();
             if(Check_TextBox())
             {
-                if (BUS_QLKH.ThemKH(KH))
+                KhachHang KH = Create_KH();
+                QuanLyKhachHang QLKH = Create_QLKH();
+                if (BUS_QLKH.ThemKH(KH, QLKH))
                 {
                     MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear_TextBox();
@@ -157,7 +164,7 @@ namespace GUI_BHQA
                 }
                 else
                 {
-                    MessageBox.Show("Thêm không thành công, trùng mã khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thêm không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             } else
             {
@@ -190,10 +197,11 @@ namespace GUI_BHQA
         private void btnXoa_Click(object sender, EventArgs e)
         {
             KhachHang KH = Create_KH();
+            QuanLyKhachHang QLKH = Create_QLKH();
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if(result == DialogResult.OK)
             {
-                if (BUS_QLKH.XoaKH(KH))
+                if (BUS_QLKH.XoaKH(KH, QLKH ))
                 {
                     MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear_TextBox();
