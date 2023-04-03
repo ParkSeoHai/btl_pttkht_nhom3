@@ -31,7 +31,7 @@ namespace GUI_BHQA
 
         Modify modify = new Modify();
 
-
+        //
         private void btnDangky_Click(object sender, EventArgs e)
         {
             string tentk = txtTaiKhoan.Text;
