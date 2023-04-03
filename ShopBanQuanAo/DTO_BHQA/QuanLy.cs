@@ -16,6 +16,7 @@ namespace DTO_BHQA
     interface IQuanLy
     {
         void DangNhap();
+        // Quản lý sản phẩm
         bool QuanLySP(SanPham SP, string query);
         // Thêm vào bảng QLSP
         bool ThemQLSP(QuanLySanPham QLSP, string query);
@@ -26,6 +27,8 @@ namespace DTO_BHQA
         bool XoaSp(SanPham SP, QuanLySanPham QLSP);
         DataTable TimKiemSP_MaSP(string txtMaSP);
         DataTable TimKiemSP_GiaSP(string txtGiaSP);
+
+        // Quản lý khách hàng
         bool QuanLyKH(KhachHang KH, string query);
         // Thêm vào bảng QLKH
         bool ThemQLKH(QuanLyKhachHang QLKH, string query);
@@ -38,6 +41,15 @@ namespace DTO_BHQA
         DataTable TimKiemKH_MaKH(string txtMaKH);
         DataTable TimKiemKH_TenKH(string txtTenKH);
         DataTable TimKiemKH_LoaiKH(string txtLoaiKH);
+
+        // Quản lý hóa đơn
+        bool QuanLyHD(HoaDon HD, string query);
+        bool ThemHD(HoaDon HD);
+        bool SuaHD(HoaDon HD);
+        bool XoaHD(HoaDon HD);
+        DataTable TimKiemHD(string fromDate, string toDate);
+
+        // Thống kê
         void ThongKeSpBanChay();
         void ThongKeDonDatHang();
         void ThongKeSpMoi();
@@ -282,6 +294,74 @@ namespace DTO_BHQA
         {
             string querySelectMaKH = "Select * from KhachHang where LoaiKH = @LoaiKH";
             return TimKiem(querySelectMaKH, "LoaiKH", txtLoaiKH);
+        }
+
+        // Quản lý hóa đơn
+        public bool QuanLyHD(HoaDon HD, string query)
+        {
+            SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("MaKH", HD.MaKH);
+                cmd.Parameters.AddWithValue("MaSP", HD.MaSP);
+                cmd.Parameters.AddWithValue("NgayMua", HD.NgayMua);
+                cmd.Parameters.AddWithValue("SoLuong", HD.SoLuong);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch { }
+            finally { conn.Close(); }
+            return false;
+        }
+        public bool ThemHD(HoaDon HD)
+        {
+            string queryInsert = "Insert into HoaDon values (@MaKH, @MaSP, @NgayMua, @SoLuong)";
+            if(QuanLyHD(HD, queryInsert))
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool SuaHD(HoaDon HD)
+        {
+            string queryUpdate = "Update HoaDon set NgayMua = @NgayMua, SoLuong = @SoLuong where MaKH = @MaKH and MaSP = @MaSP";
+            if(QuanLyHD(HD,queryUpdate))
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool XoaHD(HoaDon HD)
+        {
+            string queryDelete = "Delete HoaDon where MaKH = @MaKH and MaSP = @MaSP";
+            if(QuanLyHD(HD, queryDelete))
+            {
+                return true;
+            }
+            return false;
+        }
+        // Tìm kiếm hóa đơn
+        public DataTable TimKiemHD(string fromDate, string toDate)
+        {
+            string querySelectNgayMua = "Select * from HoaDon where NgayMua BETWEEN @fromDate AND @toDate";
+            SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(querySelectNgayMua, conn);
+                cmd.Parameters.AddWithValue("fromDate", fromDate);
+                cmd.Parameters.AddWithValue("toDate", toDate);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch { }
+            finally { conn.Close(); }
+            return dt;
         }
         public void ThongKeSpBanChay() { }
         public void ThongKeDonDatHang() { }

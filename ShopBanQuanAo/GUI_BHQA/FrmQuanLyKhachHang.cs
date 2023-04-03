@@ -29,6 +29,7 @@ namespace GUI_BHQA
         {
             cbTimKiem.Text = cbTimKiem.Items[0].ToString();
             Load_dtGridQLKH(BUS_QLKH.getData());
+            gBTimKiem.Hide();
         }
 
         // Lấy giá trị các row khi click vào dataGrid
@@ -244,6 +245,16 @@ namespace GUI_BHQA
                 DataTable dt = BUS_QLKH.TimKiemKH_LoaiKH(txtTimKiem.Text);
                 TimKiem(dt);
             }
+        }
+        // Sự kiện khi hover vào btn Tìm kiếm
+        private void btnSearch_MouseHover(object sender, EventArgs e)
+        {
+            gBTimKiem.Show();
+        }
+        // Sự kiện hiển thị lại danh sách
+        private void btnHienThi_Click(object sender, EventArgs e)
+        {
+            Load_dtGridQLKH(BUS_QLKH.getData());
         }
     }
 }
