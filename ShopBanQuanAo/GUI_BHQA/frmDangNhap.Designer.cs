@@ -54,9 +54,9 @@ namespace GUI_BHQA
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(346, 616);
+            this.label2.Location = new System.Drawing.Point(389, 770);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 31);
+            this.label2.Size = new System.Drawing.Size(123, 39);
             this.label2.TabIndex = 24;
             this.label2.Text = "Or login With ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,7 +68,7 @@ namespace GUI_BHQA
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(672, 96);
+            this.label1.Size = new System.Drawing.Size(756, 120);
             this.label1.TabIndex = 23;
             this.label1.Text = "Đăng Nhập";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -78,9 +78,9 @@ namespace GUI_BHQA
             this.linkDangKy.AutoSize = true;
             this.linkDangKy.BackColor = System.Drawing.Color.White;
             this.linkDangKy.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkDangKy.Location = new System.Drawing.Point(503, 460);
+            this.linkDangKy.Location = new System.Drawing.Point(566, 575);
             this.linkDangKy.Name = "linkDangKy";
-            this.linkDangKy.Size = new System.Drawing.Size(90, 25);
+            this.linkDangKy.Size = new System.Drawing.Size(108, 29);
             this.linkDangKy.TabIndex = 21;
             this.linkDangKy.TabStop = true;
             this.linkDangKy.Text = "Đăng Ký";
@@ -91,9 +91,9 @@ namespace GUI_BHQA
             this.linkQuenMatKhau.AutoSize = true;
             this.linkQuenMatKhau.BackColor = System.Drawing.Color.White;
             this.linkQuenMatKhau.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkQuenMatKhau.Location = new System.Drawing.Point(197, 460);
+            this.linkQuenMatKhau.Location = new System.Drawing.Point(222, 575);
             this.linkQuenMatKhau.Name = "linkQuenMatKhau";
-            this.linkQuenMatKhau.Size = new System.Drawing.Size(162, 25);
+            this.linkQuenMatKhau.Size = new System.Drawing.Size(194, 29);
             this.linkQuenMatKhau.TabIndex = 20;
             this.linkQuenMatKhau.TabStop = true;
             this.linkQuenMatKhau.Text = "Quên Mật Khẩu?";
@@ -105,11 +105,13 @@ namespace GUI_BHQA
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMatKhau.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.Black;
-            this.txtMatKhau.Location = new System.Drawing.Point(202, 390);
+            this.txtMatKhau.Location = new System.Drawing.Point(227, 488);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(391, 45);
+            this.txtMatKhau.Size = new System.Drawing.Size(440, 53);
             this.txtMatKhau.TabIndex = 18;
             this.txtMatKhau.Text = "Nhập Passwork";
+            // 
             // btnDangNhap
             // 
             this.btnDangNhap.AutoSize = true;
@@ -118,9 +120,10 @@ namespace GUI_BHQA
             this.btnDangNhap.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDangNhap.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(202, 516);
+            this.btnDangNhap.Location = new System.Drawing.Point(227, 645);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(391, 74);
+            this.btnDangNhap.Size = new System.Drawing.Size(440, 92);
             this.btnDangNhap.TabIndex = 16;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -132,9 +135,10 @@ namespace GUI_BHQA
             this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaiKhoan.ForeColor = System.Drawing.Color.Black;
-            this.txtTaiKhoan.Location = new System.Drawing.Point(202, 318);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(227, 398);
+            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(391, 45);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(440, 53);
             this.txtTaiKhoan.TabIndex = 15;
             this.txtTaiKhoan.Text = "Nhập tài khoản";
             this.txtTaiKhoan.WordWrap = false;
@@ -148,9 +152,10 @@ namespace GUI_BHQA
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::GUI_BHQA.Properties.Resources.Graphics_Vibe_Hot_Burning_Social_Google_48__1_;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(402, 670);
+            this.button2.Location = new System.Drawing.Point(452, 838);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(191, 67);
+            this.button2.Size = new System.Drawing.Size(215, 84);
             this.button2.TabIndex = 26;
             this.button2.Text = "Google ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -164,9 +169,10 @@ namespace GUI_BHQA
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Image = global::GUI_BHQA.Properties.Resources.Guillendesign_Variations_3_Facebook_48;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(180, 670);
+            this.button1.Location = new System.Drawing.Point(202, 838);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 67);
+            this.button1.Size = new System.Drawing.Size(240, 84);
             this.button1.TabIndex = 25;
             this.button1.Text = "  Facebook";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -178,9 +184,10 @@ namespace GUI_BHQA
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::GUI_BHQA.Properties.Resources.Icons8_Windows_8_Security_Password_2;
-            this.pictureBox3.Location = new System.Drawing.Point(99, 385);
+            this.pictureBox3.Location = new System.Drawing.Point(111, 481);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(56, 62);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
@@ -189,9 +196,10 @@ namespace GUI_BHQA
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::GUI_BHQA.Properties.Resources.user_icon_150670;
-            this.pictureBox2.Location = new System.Drawing.Point(99, 313);
+            this.pictureBox2.Location = new System.Drawing.Point(111, 356);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(56, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -200,9 +208,10 @@ namespace GUI_BHQA
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::GUI_BHQA.Properties.Resources._0af3c9613761d2d2394d99312aeba397;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 99);
+            this.pictureBox1.Location = new System.Drawing.Point(111, 59);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(494, 208);
+            this.pictureBox1.Size = new System.Drawing.Size(556, 260);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -213,8 +222,9 @@ namespace GUI_BHQA
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = global::GUI_BHQA.Properties.Resources.background_mau_xanh_009_1;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(672, 776);
+            this.pictureBox4.Size = new System.Drawing.Size(756, 970);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 22;
             this.pictureBox4.TabStop = false;
@@ -223,16 +233,17 @@ namespace GUI_BHQA
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(672, 776);
+            this.pictureBox5.Size = new System.Drawing.Size(756, 970);
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
             // 
             // Đăng_Nhập
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 776);
+            this.ClientSize = new System.Drawing.Size(756, 970);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -247,6 +258,7 @@ namespace GUI_BHQA
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Đăng_Nhập";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng_Nhập";
