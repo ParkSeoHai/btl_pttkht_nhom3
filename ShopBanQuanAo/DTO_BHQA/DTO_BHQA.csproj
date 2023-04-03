@@ -56,6 +56,7 @@
     <Compile Include="GioHang.cs" />
     <Compile Include="HoaDon.cs" />
     <Compile Include="KhachHang.cs" />
+    <Compile Include="Modify.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="QuanLySanPham.cs" />
     <Compile Include="QuanLyTaikhoan.cs" />
     <Compile Include="SanPham.cs" />
-    <Compile Include="TaiKhoanDangNhap.cs" />
+    <Compile Include="TaiKhoan.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
