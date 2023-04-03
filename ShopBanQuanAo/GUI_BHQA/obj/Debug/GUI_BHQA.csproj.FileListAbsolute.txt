@@ -68,3 +68,6 @@ D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BH
 D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.CopyComplete
 D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.exe
 D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.pdb
+D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Đăng_Nhập.resources
+D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmDangKy.resources
+D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmQuenMatKhau.resources
