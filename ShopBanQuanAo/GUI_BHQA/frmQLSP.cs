@@ -25,6 +25,7 @@ namespace GUI_BHQA
         {
             cbTimKiem.Text = cbTimKiem.Items[0].ToString();
             Load_dtGridQLSP(BUS_QLSP.GetData());
+            gBTimKiem.Hide();
         }
         // Hàm load datagridView
         private void Load_dtGridQLSP(DataTable dt)
@@ -177,6 +178,16 @@ namespace GUI_BHQA
                 MessageBox.Show($"Tìm thấy {dt.Rows.Count} sản phẩm");
                 Load_dtGridQLSP(dt);
             }
+        }
+        // Sự kiện khi hover thì hiện chức năng tìm kiếm
+        private void btnSearch_MouseHover(object sender, EventArgs e)
+        {
+            gBTimKiem.Show();
+        }
+        // Sự kiện hiển thị danh sách
+        private void btnHienThi_Click(object sender, EventArgs e)
+        {
+            Load_dtGridQLSP(BUS_QLSP.GetData());
         }
     }
 }
