@@ -1,4 +1,7 @@
+<<<<<<< HEAD:ShopBanQuanAo/GUI_BHQA/frmDangNhap.cs
+=======
 <<<<<<< HEAD
+>>>>>>> main:ShopBanQuanAo/GUI_BHQA/Đăng Nhập.cs
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,6 +59,8 @@ namespace GUI_BHQA
             }
         }
 
+<<<<<<< HEAD:ShopBanQuanAo/GUI_BHQA/frmDangNhap.cs
+=======
         private void txtMatKhau_MouseClick(object sender, MouseEventArgs e)
         {
             if (txtMatKhau.Text == "Nhập Passwork")
@@ -72,6 +77,7 @@ namespace GUI_BHQA
             }
         }
 
+>>>>>>> main:ShopBanQuanAo/GUI_BHQA/Đăng Nhập.cs
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string tentk = txtTaiKhoan.Text;
@@ -111,6 +117,8 @@ namespace GUI_BHQA
         }
     }
 }
+<<<<<<< HEAD:ShopBanQuanAo/GUI_BHQA/frmDangNhap.cs
+=======
 =======
 ﻿using System;
 using System.Collections.Generic;
@@ -225,3 +233,4 @@ namespace GUI_BHQA
     }
 }
 >>>>>>> 165ec7a17958b715d820aaa55a034b0fe6e3b77f
+>>>>>>> main:ShopBanQuanAo/GUI_BHQA/Đăng Nhập.cs
