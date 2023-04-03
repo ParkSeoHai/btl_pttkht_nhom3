@@ -33,9 +33,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.gBTimKiem = new System.Windows.Forms.GroupBox();
+            this.btnHienThi = new System.Windows.Forms.Button();
             this.cbTimKiem = new System.Windows.Forms.ComboBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,6 +62,7 @@
             this.dtGridQLKH = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.gBTimKiem.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGridQLKH)).BeginInit();
             this.SuspendLayout();
@@ -100,9 +103,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.GreenYellow;
+            this.groupBox2.Controls.Add(this.gBTimKiem);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtTimKiem);
-            this.groupBox2.Controls.Add(this.cbTimKiem);
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnSearch);
             this.groupBox2.Controls.Add(this.label3);
@@ -131,6 +133,63 @@
             this.groupBox2.TabIndex = 51;
             this.groupBox2.TabStop = false;
             // 
+            // gBTimKiem
+            // 
+            this.gBTimKiem.Controls.Add(this.btnHienThi);
+            this.gBTimKiem.Controls.Add(this.cbTimKiem);
+            this.gBTimKiem.Controls.Add(this.txtTimKiem);
+            this.gBTimKiem.Location = new System.Drawing.Point(887, 278);
+            this.gBTimKiem.Name = "gBTimKiem";
+            this.gBTimKiem.Size = new System.Drawing.Size(379, 93);
+            this.gBTimKiem.TabIndex = 73;
+            this.gBTimKiem.TabStop = false;
+            // 
+            // btnHienThi
+            // 
+            this.btnHienThi.BackColor = System.Drawing.Color.White;
+            this.btnHienThi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHienThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHienThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHienThi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnHienThi.Location = new System.Drawing.Point(246, 10);
+            this.btnHienThi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHienThi.Name = "btnHienThi";
+            this.btnHienThi.Size = new System.Drawing.Size(133, 55);
+            this.btnHienThi.TabIndex = 74;
+            this.btnHienThi.Text = "Hiển thị lại danh sách";
+            this.btnHienThi.UseVisualStyleBackColor = false;
+            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
+            // 
+            // cbTimKiem
+            // 
+            this.cbTimKiem.BackColor = System.Drawing.Color.White;
+            this.cbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTimKiem.FormattingEnabled = true;
+            this.cbTimKiem.Items.AddRange(new object[] {
+            "Tìm kiếm theo Mã KH",
+            "Tìm kiếm theo Họ tên",
+            "Tìm kiếm theo Loại KH"});
+            this.cbTimKiem.Location = new System.Drawing.Point(0, 10);
+            this.cbTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbTimKiem.Name = "cbTimKiem";
+            this.cbTimKiem.Size = new System.Drawing.Size(226, 33);
+            this.cbTimKiem.TabIndex = 71;
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.ForeColor = System.Drawing.Color.Black;
+            this.txtTimKiem.Location = new System.Drawing.Point(0, 58);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(226, 30);
+            this.txtTimKiem.TabIndex = 72;
+            this.txtTimKiem.Tag = "";
+            this.txtTimKiem.Text = "Nhập nội dung ...";
+            this.txtTimKiem.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTimKiem_MouseClick);
+            this.txtTimKiem.Leave += new System.EventHandler(this.txtTimKiem_Leave);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -143,6 +202,7 @@
             this.label6.TabIndex = 53;
             this.label6.Text = "Ngày sinh :";
             // 
+<<<<<<< HEAD
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,6 +233,8 @@
             this.cbTimKiem.Size = new System.Drawing.Size(203, 28);
             this.cbTimKiem.TabIndex = 71;
             // 
+=======
+>>>>>>> main
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.White;
@@ -181,7 +243,11 @@
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnXoa.Location = new System.Drawing.Point(361, 250);
+=======
+            this.btnXoa.Location = new System.Drawing.Point(503, 313);
+>>>>>>> main
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(101, 46);
@@ -199,7 +265,11 @@
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnSearch.Location = new System.Drawing.Point(501, 250);
+=======
+            this.btnSearch.Location = new System.Drawing.Point(663, 313);
+>>>>>>> main
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(132, 46);
@@ -208,6 +278,7 @@
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnSearch.MouseHover += new System.EventHandler(this.btnSearch_MouseHover);
             // 
             // label3
             // 
@@ -229,7 +300,11 @@
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnSua.Location = new System.Drawing.Point(212, 250);
+=======
+            this.btnSua.Location = new System.Drawing.Point(329, 313);
+>>>>>>> main
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(114, 46);
@@ -259,7 +334,11 @@
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnThem.Location = new System.Drawing.Point(67, 250);
+=======
+            this.btnThem.Location = new System.Drawing.Point(159, 313);
+>>>>>>> main
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(113, 46);
@@ -466,6 +545,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.gBTimKiem.ResumeLayout(false);
+            this.gBTimKiem.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtGridQLKH)).EndInit();
             this.ResumeLayout(false);
@@ -503,5 +584,7 @@
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dtGridQLKH;
+        private System.Windows.Forms.GroupBox gBTimKiem;
+        private System.Windows.Forms.Button btnHienThi;
     }
 }
