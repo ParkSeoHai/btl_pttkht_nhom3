@@ -23,9 +23,6 @@ namespace DTO_BHQA
             return sqlCon;
         }
 
-        // Connect của Duy
-        //fdr
-
         // Connect của Mạnh
         public static SqlConnection chuoiKetNoiCua_XuanManh()
         {
@@ -34,5 +31,16 @@ namespace DTO_BHQA
             sqlCon.Open();
             return sqlCon;
         }
+    }
+    // Connect của Duy
+    public class Connection
+    {
+        private static string strConnection = @"Data Source=VANDUY\SQLEXPRESS;Initial Catalog=ShopQuanAo1;Integrated Security=True";
+        public static SqlConnection GetSqlConnection()
+        {
+            return new SqlConnection(strConnection);
+        }
+
+
     }
 }
