@@ -202,39 +202,6 @@
             this.label6.TabIndex = 53;
             this.label6.Text = "Ngày sinh :";
             // 
-<<<<<<< HEAD
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.txtTimKiem.Location = new System.Drawing.Point(908, 264);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(217, 26);
-            this.txtTimKiem.TabIndex = 72;
-            this.txtTimKiem.Tag = "";
-            this.txtTimKiem.Text = "Nhập nội dung ...";
-            this.txtTimKiem.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTimKiem_MouseClick);
-            this.txtTimKiem.Leave += new System.EventHandler(this.txtTimKiem_Leave);
-            // 
-            // cbTimKiem
-            // 
-            this.cbTimKiem.BackColor = System.Drawing.Color.White;
-            this.cbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTimKiem.FormattingEnabled = true;
-            this.cbTimKiem.Items.AddRange(new object[] {
-            "Tìm kiếm theo Mã KH",
-            "Tìm kiếm theo Họ tên",
-            "Tìm kiếm theo Loại KH"});
-            this.cbTimKiem.Location = new System.Drawing.Point(670, 262);
-            this.cbTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbTimKiem.Name = "cbTimKiem";
-            this.cbTimKiem.Size = new System.Drawing.Size(203, 28);
-            this.cbTimKiem.TabIndex = 71;
-            // 
-=======
->>>>>>> main
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.White;
@@ -243,11 +210,6 @@
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-<<<<<<< HEAD
-            this.btnXoa.Location = new System.Drawing.Point(361, 250);
-=======
-            this.btnXoa.Location = new System.Drawing.Point(503, 313);
->>>>>>> main
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(101, 46);
@@ -265,11 +227,6 @@
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-<<<<<<< HEAD
-            this.btnSearch.Location = new System.Drawing.Point(501, 250);
-=======
-            this.btnSearch.Location = new System.Drawing.Point(663, 313);
->>>>>>> main
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(132, 46);
@@ -300,11 +257,6 @@
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-<<<<<<< HEAD
-            this.btnSua.Location = new System.Drawing.Point(212, 250);
-=======
-            this.btnSua.Location = new System.Drawing.Point(329, 313);
->>>>>>> main
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(114, 46);
@@ -334,11 +286,6 @@
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-<<<<<<< HEAD
-            this.btnThem.Location = new System.Drawing.Point(67, 250);
-=======
-            this.btnThem.Location = new System.Drawing.Point(159, 313);
->>>>>>> main
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(113, 46);
