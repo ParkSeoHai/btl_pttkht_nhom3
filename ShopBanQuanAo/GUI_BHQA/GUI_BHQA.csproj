@@ -58,6 +58,12 @@
     <Compile Include="frmDangKy.Designer.cs">
       <DependentUpon>frmDangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLHD.Designer.cs">
+      <DependentUpon>frmQLHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLSP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,14 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Đăng Nhập.cs">
+    <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Đăng Nhập.Designer.cs">
-      <DependentUpon>Đăng Nhập.cs</DependentUpon>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmDangKy.resx">
       <DependentUpon>frmDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLHD.resx">
+      <DependentUpon>frmQLHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLSP.resx">
       <DependentUpon>frmQLSP.cs</DependentUpon>
@@ -106,8 +115,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Đăng Nhập.resx">
-      <DependentUpon>Đăng Nhập.cs</DependentUpon>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
