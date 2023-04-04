@@ -11,9 +11,9 @@ namespace BUS_BHQA
     public class BUS_QLGH
     {
         private DAL_QLGH quanLyGioHang;
-        public bool ThemSPGioHang(SanPham sanPham)
+        public bool ThemSPGioHang(GioHang GioHang)
         {
-            if (quanLyGioHang.themSanPhamGioHang(sanPham)) {
+            if (quanLyGioHang.themSanPhamGioHang(GioHang)) {
                 return true;
             }
             return false;
