@@ -16,35 +16,70 @@ D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.Core
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.CopyComplete
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.exe
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.pdb
+<<<<<<< HEAD
+=======
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmQLKH.resources
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.pdb
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe.config
+<<<<<<< HEAD
+>>>>>>> 122c72e9125186008a53f9f243513d1fadcaa193
+=======
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmQLSP.resources
 =======
 <<<<<<< Updated upstream
+>>>>>>> ed618cc62e6c9975de8b474ef372e0f1f3ad2b4e
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.exe.config
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.exe
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.pdb
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\BUS_BHQA.exe
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DTO_BHQA.exe
+<<<<<<< HEAD
+=======
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe
+>>>>>>> 122c72e9125186008a53f9f243513d1fadcaa193
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\BUS_BHQA.pdb
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\BUS_BHQA.exe.config
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DTO_BHQA.pdb
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DTO_BHQA.exe.config
+<<<<<<< HEAD
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.AssemblyReference.cache
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.SuggestedBindingRedirects.cache
+=======
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.pdb
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe.config
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.AssemblyReference.cache
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.SuggestedBindingRedirects.cache
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmQLKH.resources
+>>>>>>> 122c72e9125186008a53f9f243513d1fadcaa193
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Properties.Resources.resources
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.GenerateResource.cache
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.CoreCompileInputs.cache
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.CopyComplete
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.exe
 D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.pdb
+<<<<<<< HEAD
+<<<<<<< HEAD
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form_Khach_Hang.resources
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form1.resources
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form_GioHang.resources
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form_Mua_Hang.resources
+=======
+=======
+<<<<<<< HEAD
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form_Khach_Hang.resources
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form1.resources
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.pdb
+D:\DCCNTT12.10.3_EAUT\Kỳ_4\Phân Tích Thiết Kế Hệ Thống\CODE_BTL\CODE\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\DAL_BHQA.exe.config
+=======
+>>>>>>> 122c72e9125186008a53f9f243513d1fadcaa193
+>>>>>>> main
+=======
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> 48b42a427489275b17b78baf3c38009289433cb8
+=======
 >>>>>>> main
 D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.exe.config
 D:\BTL SHOP BAN QUAN AO\btl_pttkht_nhom3\ShopBanQuanAo\GUI_BHQA\bin\Debug\GUI_BHQA.exe
@@ -76,3 +111,5 @@ D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmDangKy.r
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmQuenMatKhau.resources
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Đăng_Nhập.resources
 >>>>>>> 165ec7a17958b715d820aaa55a034b0fe6e3b77f
+>>>>>>> ed618cc62e6c9975de8b474ef372e0f1f3ad2b4e
+>>>>>>> main
