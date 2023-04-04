@@ -138,7 +138,11 @@
             this.gBTimKiem.Controls.Add(this.btnHienThi);
             this.gBTimKiem.Controls.Add(this.cbTimKiem);
             this.gBTimKiem.Controls.Add(this.txtTimKiem);
+<<<<<<< HEAD
             this.gBTimKiem.Location = new System.Drawing.Point(848, 264);
+=======
+            this.gBTimKiem.Location = new System.Drawing.Point(839, 264);
+>>>>>>> main
             this.gBTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gBTimKiem.Name = "gBTimKiem";
             this.gBTimKiem.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -198,7 +202,11 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label6.Location = new System.Drawing.Point(79, 237);
+=======
+            this.label6.Location = new System.Drawing.Point(70, 246);
+>>>>>>> main
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 25);
             this.label6.TabIndex = 53;
@@ -212,7 +220,11 @@
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnXoa.Location = new System.Drawing.Point(455, 295);
+=======
+            this.btnXoa.Location = new System.Drawing.Point(461, 306);
+>>>>>>> main
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(114, 58);
@@ -230,7 +242,11 @@
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnSearch.Location = new System.Drawing.Point(627, 295);
+=======
+            this.btnSearch.Location = new System.Drawing.Point(625, 306);
+>>>>>>> main
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(148, 58);
@@ -247,7 +263,11 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(82, 40);
+=======
+            this.label3.Location = new System.Drawing.Point(73, 49);
+>>>>>>> main
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 25);
             this.label3.TabIndex = 50;
@@ -261,7 +281,11 @@
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnSua.Location = new System.Drawing.Point(256, 295);
+=======
+            this.btnSua.Location = new System.Drawing.Point(275, 306);
+>>>>>>> main
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(128, 58);
@@ -277,7 +301,11 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label4.Location = new System.Drawing.Point(82, 109);
+=======
+            this.label4.Location = new System.Drawing.Point(73, 118);
+>>>>>>> main
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 25);
             this.label4.TabIndex = 51;
@@ -291,7 +319,11 @@
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.btnThem.Location = new System.Drawing.Point(87, 295);
+=======
+            this.btnThem.Location = new System.Drawing.Point(95, 306);
+>>>>>>> main
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(127, 58);
@@ -307,7 +339,11 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label5.Location = new System.Drawing.Point(79, 169);
+=======
+            this.label5.Location = new System.Drawing.Point(70, 178);
+>>>>>>> main
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 25);
             this.label5.TabIndex = 52;
@@ -316,7 +352,11 @@
             // txtSoTien
             // 
             this.txtSoTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtSoTien.Location = new System.Drawing.Point(895, 231);
+=======
+            this.txtSoTien.Location = new System.Drawing.Point(886, 240);
+>>>>>>> main
             this.txtSoTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoTien.Name = "txtSoTien";
             this.txtSoTien.Size = new System.Drawing.Size(379, 30);
@@ -325,7 +365,11 @@
             // txtLoaiKH
             // 
             this.txtLoaiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtLoaiKH.Location = new System.Drawing.Point(895, 163);
+=======
+            this.txtLoaiKH.Location = new System.Drawing.Point(886, 172);
+>>>>>>> main
             this.txtLoaiKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLoaiKH.Name = "txtLoaiKH";
             this.txtLoaiKH.Size = new System.Drawing.Size(379, 30);
@@ -336,7 +380,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label7.Location = new System.Drawing.Point(758, 40);
+=======
+            this.label7.Location = new System.Drawing.Point(749, 49);
+>>>>>>> main
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 25);
             this.label7.TabIndex = 54;
@@ -345,7 +393,11 @@
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtSDT.Location = new System.Drawing.Point(895, 103);
+=======
+            this.txtSDT.Location = new System.Drawing.Point(886, 112);
+>>>>>>> main
             this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(379, 30);
@@ -356,7 +408,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label8.Location = new System.Drawing.Point(758, 109);
+=======
+            this.label8.Location = new System.Drawing.Point(749, 118);
+>>>>>>> main
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 25);
             this.label8.TabIndex = 55;
@@ -365,7 +421,11 @@
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtDiaChi.Location = new System.Drawing.Point(895, 35);
+=======
+            this.txtDiaChi.Location = new System.Drawing.Point(886, 44);
+>>>>>>> main
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(379, 30);
@@ -376,7 +436,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label9.Location = new System.Drawing.Point(758, 169);
+=======
+            this.label9.Location = new System.Drawing.Point(749, 178);
+>>>>>>> main
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 25);
             this.label9.TabIndex = 56;
@@ -385,7 +449,11 @@
             // dateNgaySinh
             // 
             this.dateNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.dateNgaySinh.Location = new System.Drawing.Point(247, 231);
+=======
+            this.dateNgaySinh.Location = new System.Drawing.Point(238, 240);
+>>>>>>> main
             this.dateNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(355, 30);
@@ -397,7 +465,11 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.label10.Location = new System.Drawing.Point(758, 237);
+=======
+            this.label10.Location = new System.Drawing.Point(749, 246);
+>>>>>>> main
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(87, 25);
             this.label10.TabIndex = 57;
@@ -407,7 +479,11 @@
             // 
             this.radioNu.AutoSize = true;
             this.radioNu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.radioNu.Location = new System.Drawing.Point(358, 165);
+=======
+            this.radioNu.Location = new System.Drawing.Point(349, 174);
+>>>>>>> main
             this.radioNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioNu.Name = "radioNu";
             this.radioNu.Size = new System.Drawing.Size(54, 24);
@@ -420,7 +496,11 @@
             this.txtMKH.AccessibleDescription = "";
             this.txtMKH.AccessibleName = "";
             this.txtMKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtMKH.Location = new System.Drawing.Point(247, 35);
+=======
+            this.txtMKH.Location = new System.Drawing.Point(238, 44);
+>>>>>>> main
             this.txtMKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMKH.Name = "txtMKH";
             this.txtMKH.Size = new System.Drawing.Size(355, 30);
@@ -431,7 +511,11 @@
             this.radioNam.AutoSize = true;
             this.radioNam.Checked = true;
             this.radioNam.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.radioNam.Location = new System.Drawing.Point(247, 165);
+=======
+            this.radioNam.Location = new System.Drawing.Point(238, 174);
+>>>>>>> main
             this.radioNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioNam.Name = "radioNam";
             this.radioNam.Size = new System.Drawing.Size(67, 24);
@@ -445,7 +529,11 @@
             this.txtTenKH.AccessibleDescription = "";
             this.txtTenKH.AccessibleName = "";
             this.txtTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtTenKH.Location = new System.Drawing.Point(247, 103);
+=======
+            this.txtTenKH.Location = new System.Drawing.Point(238, 112);
+>>>>>>> main
             this.txtTenKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.Size = new System.Drawing.Size(355, 30);
@@ -474,7 +562,11 @@
             this.dtGridQLKH.Name = "dtGridQLKH";
             this.dtGridQLKH.RowHeadersWidth = 62;
             this.dtGridQLKH.RowTemplate.Height = 28;
+<<<<<<< HEAD
             this.dtGridQLKH.Size = new System.Drawing.Size(1188, 199);
+=======
+            this.dtGridQLKH.Size = new System.Drawing.Size(1188, 214);
+>>>>>>> main
             this.dtGridQLKH.TabIndex = 0;
             this.dtGridQLKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridQLKH_CellClick);
             // 

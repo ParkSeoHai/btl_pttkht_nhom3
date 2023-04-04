@@ -118,6 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="z4231794819937_5cfb83c207e8528df532eae267c02d76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4231794819937_5cfb83c207e8528df532eae267c02d76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="65844ee13d802b538236c05df5c0aa23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\65844ee13d802b538236c05df5c0aa23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="th" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\th.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z4231793101731_a09cb6f2e6b90438d1a2ec6d6891497b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4231793101731_a09cb6f2e6b90438d1a2ec6d6891497b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="size-ao-khoac-nam-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\size-ao-khoac-nam-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z4231809086695_1d7a940c6208532934ca946f2a4ec942" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4231809086695_1d7a940c6208532934ca946f2a4ec942.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ao-khoac-nam-han-quoc-dep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ao-khoac-nam-han-quoc-dep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="th (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\th (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gif01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gif01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dangnhap.icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dangnhap.icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,5 +169,4 @@
   <data name="0af3c9613761d2d2394d99312aeba397" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0af3c9613761d2d2394d99312aeba397.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
->>>>>>> 165ec7a17958b715d820aaa55a034b0fe6e3b77f
 </root>

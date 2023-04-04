@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -11,7 +12,7 @@ namespace DTO_BHQA
     {
         void DangNhap();
         void DangKy();
-        void ThemSpVaoGioHang();
+        bool ThemSpVaoGioHang(GioHang gioHang);
         void SuaSpTrongGioHang();
         void XoaSpTrongGioHang();
         void TimKiemSp();
@@ -38,7 +39,18 @@ namespace DTO_BHQA
 
         public void DangNhap() { }
         public void DangKy() { }
-        public void ThemSpVaoGioHang() { }
+        public bool ThemSpVaoGioHang(GioHang gioHang)
+        {
+            SqlCommand sqlCMD = new SqlCommand();
+            sqlCMD.CommandType = System.Data.CommandType.Text;
+            sqlCMD.CommandText = $"INSERT INTO GIOHANG VALUES('{gioHang.MaKH}', '{gioHang.MaSP}')";
+            sqlCMD.Connection = DBConnect.chuoiKetNoiCua_XuanManh();
+            if (sqlCMD.ExecuteNonQuery() > 0)
+            {
+                return true;
+            }
+            return false;
+        }
         public void SuaSpTrongGioHang() { }
         public void XoaSpTrongGioHang() { }
         public void TimKiemSp() { }

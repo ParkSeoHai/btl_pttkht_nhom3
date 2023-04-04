@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL_BHQA;
 
 namespace BUS_BHQA
 {
@@ -32,7 +33,7 @@ namespace BUS_BHQA
         // Sửa khách hàng
         public bool SuaKH(KhachHang KH)
         {
-            if(DAL_QLKH.SuaKH(KH))
+            if (DAL_QLKH.SuaKH(KH))
             {
                 return true;
             }
