@@ -14,9 +14,10 @@ namespace GUI_BHQA
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQLKH());
+            Application.Run(new frmQLKH());*/
+            Application.Run(new Form_Khach_Hang());
         }
     }
 }
