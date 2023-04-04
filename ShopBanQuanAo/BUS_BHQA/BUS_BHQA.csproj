@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_QLGH.cs" />
+    <Compile Include="BUS_QLKH.cs" />
     <Compile Include="BUS_QLHD.cs" />
     <Compile Include="BUS_QLKH.cs" />
     <Compile Include="BUS_QLSP.cs" />
@@ -57,6 +59,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_KH_Them_San_Pham.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

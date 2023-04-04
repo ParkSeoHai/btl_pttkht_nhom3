@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_KH_ThemSP.cs" />
+    <Compile Include="DAL_QLGH.cs" />
+    <Compile Include="DAL_QLKH.cs" />
     <Compile Include="DAL_QLHD.cs" />
     <Compile Include="DAL_QLKH.cs" />
     <Compile Include="DAL_QLSP.cs" />

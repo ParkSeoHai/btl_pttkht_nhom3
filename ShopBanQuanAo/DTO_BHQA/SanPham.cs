@@ -26,5 +26,6 @@ namespace DTO_BHQA
             _GiaSp = giaSp;
             _DonViTinh = donViTinh;
         }
+
     }
 }
