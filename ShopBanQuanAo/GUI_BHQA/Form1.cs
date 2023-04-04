@@ -17,9 +17,16 @@ namespace GUI_BHQA
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void Form1_Load(object sender, EventArgs e)
         {
 
+=======
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_Khach_Hang khanhHang = new Form_Khach_Hang();
+            khanhHang.ShowDialog();
+>>>>>>> main
         }
     }
 }

@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_QLGH.cs" />
+    <Compile Include="BUS_QLKH.cs" />
+    <Compile Include="BUS_QLHD.cs" />
     <Compile Include="BUS_QLKH.cs" />
     <Compile Include="BUS_QLSP.cs" />
     <Compile Include="Form1.cs">

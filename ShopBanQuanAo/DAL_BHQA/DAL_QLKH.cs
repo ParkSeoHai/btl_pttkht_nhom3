@@ -24,9 +24,9 @@ namespace DAL_BHQA
             return dt;
         }
         // Thêm khách hàng
-        public bool ThemKH(KhachHang KH)
+        public bool ThemKH(KhachHang KH, QuanLyKhachHang QLKH)
         {
-            if(QuanLy.ThemKH(KH))
+            if(QuanLy.ThemKH(KH, QLKH))
             {
                 return true;
             }
@@ -42,9 +42,9 @@ namespace DAL_BHQA
             return false;
         }
         // Xóa khách hàng
-        public bool XoaKH(KhachHang KH)
+        public bool XoaKH(KhachHang KH, QuanLyKhachHang QLKH)
         {
-            if (QuanLy.XoaKH(KH))
+            if (QuanLy.XoaKH(KH, QLKH))
             {
                 return true;
             }
