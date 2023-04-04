@@ -63,9 +63,15 @@ namespace GUI_BHQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap ao_khoac_nam_han_quoc_dep {
             get {
                 object obj = ResourceManager.GetObject("ao-khoac-nam-han-quoc-dep", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap _0af3c9613761d2d2394d99312aeba397 {
+            get {
+                object obj = ResourceManager.GetObject("0af3c9613761d2d2394d99312aeba397", resourceCulture);
+>>>>>>> ed618cc62e6c9975de8b474ef372e0f1f3ad2b4e
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +79,15 @@ namespace GUI_BHQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap gif01 {
             get {
                 object obj = ResourceManager.GetObject("gif01", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap background_mau_xanh_009_1 {
+            get {
+                object obj = ResourceManager.GetObject("background-mau-xanh-009-1", resourceCulture);
+>>>>>>> ed618cc62e6c9975de8b474ef372e0f1f3ad2b4e
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +95,15 @@ namespace GUI_BHQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap giphy {
             get {
                 object obj = ResourceManager.GetObject("giphy", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap dangnhap_icon {
+            get {
+                object obj = ResourceManager.GetObject("dangnhap.icon", resourceCulture);
+>>>>>>> ed618cc62e6c9975de8b474ef372e0f1f3ad2b4e
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +111,45 @@ namespace GUI_BHQA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap th__1_ {
             get {
                 object obj = ResourceManager.GetObject("th (1)", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap Graphics_Vibe_Hot_Burning_Social_Google_48__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Graphics-Vibe-Hot-Burning-Social-Google.48 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guillendesign_Variations_3_Facebook_48 {
+            get {
+                object obj = ResourceManager.GetObject("Guillendesign-Variations-3-Facebook.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icons8_Windows_8_Security_Password_2 {
+            get {
+                object obj = ResourceManager.GetObject("Icons8-Windows-8-Security-Password-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_icon_150670 {
+            get {
+                object obj = ResourceManager.GetObject("user_icon_150670", resourceCulture);
+>>>>>>> ed618cc62e6c9975de8b474ef372e0f1f3ad2b4e
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
