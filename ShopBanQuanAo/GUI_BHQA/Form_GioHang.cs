@@ -46,7 +46,7 @@ namespace GUI_BHQA
                 item.SubItems.Add(gioHang.MaKH);
                 item.SubItems.Add(gioHang.MaSP);
                 lsvHienThi_SP_Gio_Hang.Items.Add(item);
-                
+
             }
             reader.Close();
         }
@@ -118,7 +118,8 @@ namespace GUI_BHQA
             if (x > 0)
             {
                 MessageBox.Show("Thành Công");
-            }else
+            }
+            else
             {
                 MessageBox.Show("KHông Thành Công");
             }
@@ -140,12 +141,12 @@ namespace GUI_BHQA
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(lsvHienThi_SP_Gio_Hang.Items.Count == 0)
+            if (lsvHienThi_SP_Gio_Hang.Items.Count == 0)
             {
                 MessageBox.Show("Bạn Phải Có Ít Nhất Một Sản Phẩm Để Mua Hàng",
                       "Thông Báo",
@@ -162,4 +163,4 @@ namespace GUI_BHQA
             }
         }
     }
-}   
+}

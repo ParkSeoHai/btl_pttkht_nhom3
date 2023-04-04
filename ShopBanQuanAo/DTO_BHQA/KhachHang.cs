@@ -5,15 +5,14 @@ using System.Linq;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Data;
+
 namespace DTO_BHQA
 {
     interface IKhachHang
     {
         void DangNhap();
         void DangKy();
-        bool ThemSpVaoGioHang(SanPham sanPham);
+        bool ThemSpVaoGioHang(GioHang gioHang);
         void SuaSpTrongGioHang();
         void XoaSpTrongGioHang();
         void TimKiemSp();
@@ -40,14 +39,13 @@ namespace DTO_BHQA
 
         public void DangNhap() { }
         public void DangKy() { }
-        public bool ThemSpVaoGioHang(SanPham sanPham) {
-            string s = $"insert into SANPHAM values('{sanPham.MaSp}', N'{sanPham.TenSp}', {sanPham.GiaSp}, N'{sanPham.DonViTinh}')";
+        public bool ThemSpVaoGioHang(GioHang gioHang)
+        {
             SqlCommand sqlCMD = new SqlCommand();
-            sqlCMD.CommandType = CommandType.Text;
-            sqlCMD.CommandText = s;
+            sqlCMD.CommandType = System.Data.CommandType.Text;
+            sqlCMD.CommandText = $"INSERT INTO GIOHANG VALUES('{gioHang.MaKH}', '{gioHang.MaSP}')";
             sqlCMD.Connection = DBConnect.chuoiKetNoiCua_XuanManh();
-            int check = sqlCMD.ExecuteNonQuery();
-            if (check > 0)
+            if (sqlCMD.ExecuteNonQuery() > 0)
             {
                 return true;
             }
