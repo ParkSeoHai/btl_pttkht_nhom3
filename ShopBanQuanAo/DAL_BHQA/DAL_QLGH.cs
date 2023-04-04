@@ -10,9 +10,9 @@ namespace DAL_BHQA
     public class DAL_QLGH
     {
         private KhachHang khachHang;
-        public bool themSanPhamGioHang(SanPham sanPham)
+        public bool themSanPhamGioHang(GioHang GioHang)
         {
-            if (khachHang.ThemSpVaoGioHang(sanPham))
+            if (khachHang.ThemSpVaoGioHang(GioHang))
             {
                 return true;
             }

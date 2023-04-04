@@ -51,9 +51,9 @@ namespace GUI_BHQA
             this.txtMaKhachHang.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtMaKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKhachHang.Location = new System.Drawing.Point(311, 326);
+            this.txtMaKhachHang.Location = new System.Drawing.Point(328, 264);
             this.txtMaKhachHang.Name = "txtMaKhachHang";
-            this.txtMaKhachHang.Size = new System.Drawing.Size(269, 34);
+            this.txtMaKhachHang.Size = new System.Drawing.Size(269, 39);
             this.txtMaKhachHang.TabIndex = 28;
             // 
             // label6
@@ -61,9 +61,9 @@ namespace GUI_BHQA
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(91, 331);
+            this.label6.Location = new System.Drawing.Point(92, 268);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(165, 25);
+            this.label6.Size = new System.Drawing.Size(204, 31);
             this.label6.TabIndex = 27;
             this.label6.Text = "Mã khách hàng:";
             // 
@@ -71,10 +71,10 @@ namespace GUI_BHQA
             // 
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 25.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(672, 96);
+            this.label5.Size = new System.Drawing.Size(672, 76);
             this.label5.TabIndex = 25;
             this.label5.Text = "Đăng Ký";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,9 +85,9 @@ namespace GUI_BHQA
             this.btnDangky.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnDangky.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangky.ForeColor = System.Drawing.Color.White;
-            this.btnDangky.Location = new System.Drawing.Point(311, 657);
+            this.btnDangky.Location = new System.Drawing.Point(329, 518);
             this.btnDangky.Name = "btnDangky";
-            this.btnDangky.Size = new System.Drawing.Size(269, 59);
+            this.btnDangky.Size = new System.Drawing.Size(268, 51);
             this.btnDangky.TabIndex = 24;
             this.btnDangky.Text = "Đăng ký";
             this.btnDangky.UseVisualStyleBackColor = false;
@@ -98,9 +98,9 @@ namespace GUI_BHQA
             this.txtEmail.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(311, 578);
+            this.txtEmail.Location = new System.Drawing.Point(328, 462);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(269, 34);
+            this.txtEmail.Size = new System.Drawing.Size(269, 39);
             this.txtEmail.TabIndex = 23;
             // 
             // label4
@@ -108,9 +108,9 @@ namespace GUI_BHQA
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(91, 583);
+            this.label4.Location = new System.Drawing.Point(92, 468);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 25);
+            this.label4.Size = new System.Drawing.Size(93, 31);
             this.label4.TabIndex = 22;
             this.label4.Text = "Email:";
             // 
@@ -119,9 +119,10 @@ namespace GUI_BHQA
             this.txtXacNhanMatKhau.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtXacNhanMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtXacNhanMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtXacNhanMatKhau.Location = new System.Drawing.Point(311, 515);
+            this.txtXacNhanMatKhau.Location = new System.Drawing.Point(328, 413);
             this.txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
-            this.txtXacNhanMatKhau.Size = new System.Drawing.Size(269, 34);
+            this.txtXacNhanMatKhau.PasswordChar = '*';
+            this.txtXacNhanMatKhau.Size = new System.Drawing.Size(269, 39);
             this.txtXacNhanMatKhau.TabIndex = 21;
             // 
             // label3
@@ -129,9 +130,9 @@ namespace GUI_BHQA
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(91, 520);
+            this.label3.Location = new System.Drawing.Point(92, 420);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 25);
+            this.label3.Size = new System.Drawing.Size(252, 31);
             this.label3.TabIndex = 20;
             this.label3.Text = "Xác nhận mật khẩu:";
             // 
@@ -140,9 +141,10 @@ namespace GUI_BHQA
             this.txtMatKhau.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(311, 452);
+            this.txtMatKhau.Location = new System.Drawing.Point(329, 363);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(269, 34);
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(269, 39);
             this.txtMatKhau.TabIndex = 19;
             // 
             // label2
@@ -150,9 +152,9 @@ namespace GUI_BHQA
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(91, 457);
+            this.label2.Location = new System.Drawing.Point(92, 370);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 25);
+            this.label2.Size = new System.Drawing.Size(137, 31);
             this.label2.TabIndex = 18;
             this.label2.Text = "Mật khẩu:";
             // 
@@ -161,9 +163,9 @@ namespace GUI_BHQA
             this.txtTaiKhoan.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiKhoan.Location = new System.Drawing.Point(311, 389);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(328, 312);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(269, 34);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(269, 39);
             this.txtTaiKhoan.TabIndex = 17;
             // 
             // label1
@@ -171,9 +173,9 @@ namespace GUI_BHQA
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 394);
+            this.label1.Location = new System.Drawing.Point(92, 319);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 25);
+            this.label1.Size = new System.Drawing.Size(186, 31);
             this.label1.TabIndex = 16;
             this.label1.Text = "Tên tài khoản:";
             // 
@@ -181,9 +183,9 @@ namespace GUI_BHQA
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::GUI_BHQA.Properties.Resources._0af3c9613761d2d2394d99312aeba397;
-            this.pictureBox1.Location = new System.Drawing.Point(96, 75);
+            this.pictureBox1.Location = new System.Drawing.Point(97, 42);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(484, 231);
+            this.pictureBox1.Size = new System.Drawing.Size(484, 215);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -195,16 +197,16 @@ namespace GUI_BHQA
             this.pictureBox2.Image = global::GUI_BHQA.Properties.Resources.background_mau_xanh_009_1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(672, 776);
+            this.pictureBox2.Size = new System.Drawing.Size(672, 587);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
             // 
             // frmDangKy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 776);
+            this.ClientSize = new System.Drawing.Size(672, 587);
             this.Controls.Add(this.txtMaKhachHang);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -219,6 +221,7 @@ namespace GUI_BHQA
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmDangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDangKy";

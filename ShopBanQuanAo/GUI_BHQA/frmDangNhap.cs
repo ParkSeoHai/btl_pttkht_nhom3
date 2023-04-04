@@ -11,9 +11,9 @@ using DTO_BHQA;
 
 namespace GUI_BHQA
 {
-    public partial class Đăng_Nhập : Form
+    public partial class frmDangNhap : Form
     {
-        public Đăng_Nhập()
+        public frmDangNhap()
         {
             InitializeComponent();
         }

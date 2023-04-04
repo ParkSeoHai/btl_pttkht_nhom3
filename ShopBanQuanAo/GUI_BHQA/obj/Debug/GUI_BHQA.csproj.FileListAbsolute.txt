@@ -87,3 +87,4 @@ D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form1.resou
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form_GioHang.resources
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form_Khach_Hang.resources
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.Form_Mua_Hang.resources
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmDangNhap.resources
