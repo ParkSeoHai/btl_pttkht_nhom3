@@ -16,8 +16,7 @@ namespace GUI_BHQA
         {
             /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQLKH());*/
-            Application.Run(new Form_Khach_Hang());
+            Application.Run(new frmQLSP());
         }
     }
 }

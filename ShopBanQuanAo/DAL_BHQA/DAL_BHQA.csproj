@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DAL_KH_ThemSP.cs" />
     <Compile Include="DAL_QLKH.cs" />
+    <Compile Include="DAL_QLSP.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -69,6 +69,11 @@
     </Compile>
     <Compile Include="Form_Mua_Hang.Designer.cs">
       <DependentUpon>Form_Mua_Hang.cs</DependentUpon>
+    <Compile Include="frmQLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSP.Designer.cs">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmQuanLyKhachHang.cs">
       <SubType>Form</SubType>
@@ -89,6 +94,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Mua_Hang.resx">
       <DependentUpon>Form_Mua_Hang.cs</DependentUpon>
+    <EmbeddedResource Include="frmQLSP.resx">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLyKhachHang.resx">
       <DependentUpon>FrmQuanLyKhachHang.cs</DependentUpon>
