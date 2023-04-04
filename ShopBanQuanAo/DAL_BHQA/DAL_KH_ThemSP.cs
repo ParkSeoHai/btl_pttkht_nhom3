@@ -10,9 +10,9 @@ namespace DAL_BHQA
     public class DAL_KH_ThemSP
     {
         KhachHang khachHang = new KhachHang();
-        public bool khachHangThemSP(GioHang gioHang)
+        public bool khachHangThemSP(SanPham SanPham)
         {
-            if (khachHang.ThemSpVaoGioHang(gioHang))
+            if (khachHang.ThemSpVaoGioHang(SanPham))
             {
                 return true;
             }

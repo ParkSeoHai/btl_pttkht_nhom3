@@ -14,9 +14,9 @@ namespace GUI_BHQA
         [STAThread]
         static void Main()
         {
-            /*Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Đăng_Nhập());
+            Application.Run(new frmQLSP());
         }
     }
 }
