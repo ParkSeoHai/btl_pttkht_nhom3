@@ -1,11 +1,6 @@
 ﻿using DTO_BHQA;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL_BHQA
 {
@@ -24,7 +19,7 @@ namespace DAL_BHQA
         // Phương thức thêm hóa đơn
         public bool ThemHD(HoaDon HD)
         {
-            if(QuanLy.ThemHD(HD))
+            if (QuanLy.ThemHD(HD))
             {
                 return true;
             }
@@ -33,7 +28,7 @@ namespace DAL_BHQA
         // Phương thức sửa hóa đơn
         public bool SuaHD(HoaDon HD)
         {
-            if(QuanLy.SuaHD(HD))
+            if (QuanLy.SuaHD(HD))
             {
                 return true;
             }

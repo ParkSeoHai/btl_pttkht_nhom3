@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DTO_BHQA
+﻿namespace DTO_BHQA
 {
     public class SanPham
     {
@@ -26,6 +20,5 @@ namespace DTO_BHQA
             _GiaSp = giaSp;
             _DonViTinh = donViTinh;
         }
-
     }
 }

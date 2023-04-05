@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DTO_BHQA;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DTO_BHQA;
 
 namespace DAL_BHQA
 {
@@ -26,7 +20,7 @@ namespace DAL_BHQA
         // Thêm khách hàng
         public bool ThemKH(KhachHang KH, QuanLyKhachHang QLKH)
         {
-            if(QuanLy.ThemKH(KH, QLKH))
+            if (QuanLy.ThemKH(KH, QLKH))
             {
                 return true;
             }
