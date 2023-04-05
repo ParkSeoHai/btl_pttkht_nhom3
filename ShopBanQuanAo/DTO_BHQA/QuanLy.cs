@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace DTO_BHQA
 {
@@ -75,7 +65,7 @@ namespace DTO_BHQA
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("MaQL", QLSP.MaQL);
                 cmd.Parameters.AddWithValue("MaSP", QLSP.MaSP);
-                if(cmd.ExecuteNonQuery() > 0)
+                if (cmd.ExecuteNonQuery() > 0)
                 {
                     return true;
                 }
@@ -124,26 +114,29 @@ namespace DTO_BHQA
             return false;
         }
         // Phương thức thêm sản phẩm
-        public bool ThemSp(SanPham SP, QuanLySanPham QLSP) {
+        public bool ThemSp(SanPham SP, QuanLySanPham QLSP)
+        {
             string queryInsert = "Insert into SanPham values (@MaSP, @TenSP, @GiaSP, @DonViTinh)";
             string queryInsertQLSP = "Insert into QuanLySanPham values (@MaQL, @MaSP)";
-            if(QuanLySP(SP, queryInsert) && ThemQLSP(QLSP, queryInsertQLSP))
+            if (QuanLySP(SP, queryInsert) && ThemQLSP(QLSP, queryInsertQLSP))
             {
                 return true;
             }
             return false;
         }
         // Phương thức sửa sản phẩm
-        public bool SuaSp(SanPham SP) {
+        public bool SuaSp(SanPham SP)
+        {
             string queryUpdate = "Update SanPham set TenSP = @TenSP, GiaSP = @GiaSP, DonViTinh = @DonViTinh where MaSP = @MaSP";
-            if(QuanLySP(SP, queryUpdate))
+            if (QuanLySP(SP, queryUpdate))
             {
                 return true;
             }
             return false;
         }
         // Phương thức xóa sản phẩm
-        public bool XoaSp(SanPham SP, QuanLySanPham QLSP) {
+        public bool XoaSp(SanPham SP, QuanLySanPham QLSP)
+        {
             string queryDelete = "Delete SanPham where MaSP = @MaSP";
             string queryDeleteQLSP = "Delete QuanLySanPham where MaSP = @MaSP";
             if (XoaQLSP(QLSP, queryDeleteQLSP) && QuanLySP(SP, queryDelete))
@@ -227,29 +220,32 @@ namespace DTO_BHQA
             return false;
         }
         // Thêm khách hàng
-        public bool ThemKH(KhachHang KH, QuanLyKhachHang QLKH) {
+        public bool ThemKH(KhachHang KH, QuanLyKhachHang QLKH)
+        {
             string queryInsert = "Insert into KhachHang values (@MaKH, @HoTen, @GioiTinh, @NgaySinh, @DiaChi, @SDT, @LoaiKH, @SoTien)";
             string queryInsertQLKH = "Insert into QuanLyKhachHang values (@MaQL, @MaKH)";
-            if(QuanLyKH(KH, queryInsert) && ThemQLKH(QLKH, queryInsertQLKH))
+            if (QuanLyKH(KH, queryInsert) && ThemQLKH(QLKH, queryInsertQLKH))
             {
                 return true;
             }
             return false;
         }
         // Sửa khách hàng
-        public bool SuaKH(KhachHang KH) {
+        public bool SuaKH(KhachHang KH)
+        {
             string queryUpdate = "Update KhachHang set HoTen = @HoTen, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh, DiaChi = @DiaChi, SDT = @SDT, LoaiKH = @LoaiKH, SoTien = @SoTien WHERE MaKH = @MaKH";
-            if(QuanLyKH(KH, queryUpdate))
+            if (QuanLyKH(KH, queryUpdate))
             {
                 return true;
             }
             return false;
         }
         // Xóa khách hàng
-        public bool XoaKH(KhachHang KH, QuanLyKhachHang QLKH) {
+        public bool XoaKH(KhachHang KH, QuanLyKhachHang QLKH)
+        {
             string queryDelete = "Delete KhachHang where MaKH = @MaKH";
             string queryDeleteQLKH = "Delete QuanLyKhachHang where MaKH = @MaKH";
-            if(XoaQLKH(QLKH, queryDeleteQLKH) && QuanLyKH(KH, queryDelete))
+            if (XoaQLKH(QLKH, queryDeleteQLKH) && QuanLyKH(KH, queryDelete))
             {
                 return true;
             }
@@ -320,7 +316,7 @@ namespace DTO_BHQA
         public bool ThemHD(HoaDon HD)
         {
             string queryInsert = "Insert into HoaDon values (@MaKH, @MaSP, @NgayMua, @SoLuong)";
-            if(QuanLyHD(HD, queryInsert))
+            if (QuanLyHD(HD, queryInsert))
             {
                 return true;
             }
@@ -329,7 +325,7 @@ namespace DTO_BHQA
         public bool SuaHD(HoaDon HD)
         {
             string queryUpdate = "Update HoaDon set NgayMua = @NgayMua, SoLuong = @SoLuong where MaKH = @MaKH and MaSP = @MaSP";
-            if(QuanLyHD(HD,queryUpdate))
+            if (QuanLyHD(HD, queryUpdate))
             {
                 return true;
             }
@@ -338,7 +334,7 @@ namespace DTO_BHQA
         public bool XoaHD(HoaDon HD)
         {
             string queryDelete = "Delete HoaDon where MaKH = @MaKH and MaSP = @MaSP";
-            if(QuanLyHD(HD, queryDelete))
+            if (QuanLyHD(HD, queryDelete))
             {
                 return true;
             }

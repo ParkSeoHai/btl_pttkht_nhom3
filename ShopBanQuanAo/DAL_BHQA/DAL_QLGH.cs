@@ -1,23 +1,18 @@
 ﻿using DTO_BHQA;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL_BHQA
 {
     public class DAL_QLGH
     {
-        private KhachHang khachHang;
-        public bool themSanPhamGioHang(SanPham sanPham)
+        KhachHang khachHang = new KhachHang();
+        public bool themSanPhamGioHang(GioHang GioHang)
         {
-            if (khachHang.ThemSpVaoGioHang(sanPham))
+            if (khachHang.ThemSpVaoGioHang(GioHang))
             {
                 return true;
             }
             return false;
         }
-        
+
     }
 }

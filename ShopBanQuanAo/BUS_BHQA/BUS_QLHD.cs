@@ -1,11 +1,6 @@
 ﻿using DAL_BHQA;
 using DTO_BHQA;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BUS_BHQA
 {
@@ -20,7 +15,7 @@ namespace BUS_BHQA
         // Phương thức thêm vào hóa đơn
         public bool ThemHD(HoaDon HD)
         {
-            if(DAL_QLHD.ThemHD(HD))
+            if (DAL_QLHD.ThemHD(HD))
             {
                 return true;
             }
@@ -29,7 +24,7 @@ namespace BUS_BHQA
         // Phương thức sửa hóa đơn
         public bool SuaHD(HoaDon HD)
         {
-            if(DAL_QLHD.SuaHD(HD))
+            if (DAL_QLHD.SuaHD(HD))
             {
                 return true;
             }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GUI_BHQA
@@ -16,7 +13,7 @@ namespace GUI_BHQA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQLSP());
+            Application.Run(new frmDangNhap());
         }
     }
 }

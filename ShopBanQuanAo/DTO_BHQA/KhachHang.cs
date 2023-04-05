@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 
 namespace DTO_BHQA
 {
@@ -41,14 +35,21 @@ namespace DTO_BHQA
         public void DangKy() { }
         public bool ThemSpVaoGioHang(GioHang gioHang)
         {
-            SqlCommand sqlCMD = new SqlCommand();
-            sqlCMD.CommandType = System.Data.CommandType.Text;
-            sqlCMD.CommandText = $"INSERT INTO GIOHANG VALUES('{gioHang.MaKH}', '{gioHang.MaSP}')";
-            sqlCMD.Connection = DBConnect.chuoiKetNoiCua_XuanManh();
-            if (sqlCMD.ExecuteNonQuery() > 0)
+            string query = "Insert into GioHang values (@MaKH, @MaSP)";
+            SqlConnection conn = new SqlConnection(DBConnect.connStringHai());
+            try
             {
-                return true;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("MaKH", gioHang.MaKH);
+                cmd.Parameters.AddWithValue("MaSP", gioHang.MaSP);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
             }
+            catch { }
+            finally { conn.Close(); }
             return false;
         }
         public void SuaSpTrongGioHang() { }

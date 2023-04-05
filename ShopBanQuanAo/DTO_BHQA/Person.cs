@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace DTO_BHQA
+﻿namespace DTO_BHQA
 {
     interface IPerson
     {
@@ -19,10 +12,10 @@ namespace DTO_BHQA
     public class Person : IPerson
     {
         public string ten { get; set; }
-        public string ngaySinh {get; set;}
-        public string diaChi {get; set;}
-        public string sdt {get; set;}
-        public string gioiTinh {get; set;}
+        public string ngaySinh { get; set; }
+        public string diaChi { get; set; }
+        public string sdt { get; set; }
+        public string gioiTinh { get; set; }
 
         public Person() { }
         public Person(string ten, string ngaySinh, string diaChi, string sdt, string gioiTinh)
