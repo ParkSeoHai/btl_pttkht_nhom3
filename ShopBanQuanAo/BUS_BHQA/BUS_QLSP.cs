@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DAL_BHQA;
+﻿using DAL_BHQA;
 using DTO_BHQA;
+using System.Data;
 
 namespace BUS_BHQA
 {
@@ -19,7 +14,7 @@ namespace BUS_BHQA
         // Thêm sp
         public bool ThemSP(SanPham SP, QuanLySanPham QLSP)
         {
-            if(DAL_QLSP.ThemSP(SP, QLSP))
+            if (DAL_QLSP.ThemSP(SP, QLSP))
             {
                 return true;
             }
@@ -47,7 +42,7 @@ namespace BUS_BHQA
         public DataTable TimKiemSP_MaSP(string txtMaSP)
         {
             DataTable dt = DAL_QLSP.TimKiemSP_MaSP(txtMaSP);
-            if(dt.Rows.Count > 0)
+            if (dt.Rows.Count > 0)
             {
                 return dt;
             }

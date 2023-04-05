@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DTO_BHQA;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DTO_BHQA;
 
 namespace DAL_BHQA
 {
@@ -23,7 +18,7 @@ namespace DAL_BHQA
         // Thêm sp
         public bool ThemSP(SanPham SP, QuanLySanPham QLSP)
         {
-            if(QuanLy.ThemSp(SP, QLSP))
+            if (QuanLy.ThemSp(SP, QLSP))
             {
                 return true;
             }

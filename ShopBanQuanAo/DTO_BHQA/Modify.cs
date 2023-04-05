@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DTO_BHQA
 {
@@ -23,7 +19,7 @@ namespace DTO_BHQA
         {
             List<TaiKhoan> taiKhoans = new List<TaiKhoan>();
             // khi using thực thi phần trong ngoăc thì nó sẽ xóa hết đối tượng ở trên 
-            using (SqlConnection sqlConnection = Connection.GetSqlConnection())
+            using (SqlConnection sqlConnection = DBConnect.chuoiKetNoiCua_Hai())
             {
                 sqlConnection.Open();  // mở kết nối 
                 SqlCommand = new SqlCommand(query, sqlConnection); // khởi tạo sqlcommand 
@@ -40,7 +36,7 @@ namespace DTO_BHQA
 
         public void Command(string query)  // dung de dang ki tai khoan
         {
-            using (SqlConnection sqlConnection = Connection.GetSqlConnection())
+            using (SqlConnection sqlConnection = DBConnect.chuoiKetNoiCua_Hai())
             {
                 sqlConnection.Open();
                 SqlCommand = new SqlCommand(query, sqlConnection);
