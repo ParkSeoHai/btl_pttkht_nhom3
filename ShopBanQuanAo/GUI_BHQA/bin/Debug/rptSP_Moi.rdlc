@@ -41,16 +41,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.9542cm</Width>
+              <Width>2.20014cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.71809cm</Width>
+              <Width>4.06986cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.74253cm</Width>
+              <Width>2.27069cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.81309cm</Width>
+              <Width>3.77cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.41181cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -59,14 +62,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox3">
+                    <Textbox Name="Textbox2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ma Sp</Value>
+                              <Value>Mã SP</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -77,7 +80,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -93,14 +96,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox5">
+                    <Textbox Name="Textbox4">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ten Sp</Value>
+                              <Value>Tên SP</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -111,7 +114,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <rd:DefaultName>Textbox4</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -127,14 +130,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox7">
+                    <Textbox Name="Textbox6">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Gia Sp</Value>
+                              <Value>Giá bán</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -145,7 +148,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <rd:DefaultName>Textbox6</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -161,14 +164,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox9">
+                    <Textbox Name="Textbox10">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Don Vi Tinh</Value>
+                              <Value>Ngày thêm SP</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -179,7 +182,41 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <rd:DefaultName>Textbox10</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox8">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Giảm giá (%)</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -296,14 +333,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DonViTinh">
+                    <Textbox Name="NgayThem">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!DonViTinh.Value</Value>
+                              <Value>=Fields!NgayThem.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -312,7 +349,39 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DonViTinh</rd:DefaultName>
+                      <rd:DefaultName>NgayThem</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="GiamGia">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!GiamGia.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>GiamGia</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -336,6 +405,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -349,10 +419,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsSP_Moi</DataSetName>
-        <Top>2.86314cm</Top>
-        <Left>0.92287cm</Left>
+        <Top>3.16301cm</Top>
+        <Left>0.64064cm</Left>
         <Height>1.2cm</Height>
-        <Width>13.22792cm</Width>
+        <Width>14.7225cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -364,7 +434,7 @@
     <Height>3.82639in</Height>
     <Style />
   </Body>
-  <Width>5.94444in</Width>
+  <Width>6.24987in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -392,9 +462,9 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="DonViTinh">
-          <DataField>DonViTinh</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="GiamGia">
+          <DataField>GiamGia</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="GiaSp">
           <DataField>GiaSp</DataField>
@@ -404,8 +474,16 @@
           <DataField>MaSp</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NgayThem">
+          <DataField>NgayThem</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TenSp">
           <DataField>TenSp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UrlImg">
+          <DataField>UrlImg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>

@@ -50,10 +50,5 @@ namespace BUS_BHQA
         {
             return DAL_QLKH.TimKiemKH_TenKH(txtMaKH);
         }
-        // Tìm kiếm theo loại khách hàng
-        public DataTable TimKiemKH_LoaiKH(string txtMaKH)
-        {
-            return DAL_QLKH.TimKiemKH_LoaiKH(txtMaKH);
-        }
     }
 }

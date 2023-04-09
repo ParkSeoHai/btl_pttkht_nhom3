@@ -100,7 +100,6 @@ namespace GUI_BHQA
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::GUI_BHQA.Properties.Resources._0af3c9613761d2d2394d99312aeba397;
             this.pictureBox1.Location = new System.Drawing.Point(92, 101);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(484, 254);
@@ -112,7 +111,6 @@ namespace GUI_BHQA
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::GUI_BHQA.Properties.Resources.background_mau_xanh_009_1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(672, 675);

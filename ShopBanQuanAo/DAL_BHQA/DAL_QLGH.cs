@@ -4,15 +4,14 @@ namespace DAL_BHQA
 {
     public class DAL_QLGH
     {
-        KhachHang khachHang = new KhachHang();
+        KhachHang KH = new KhachHang();
         public bool themSanPhamGioHang(GioHang GioHang)
         {
-            if (khachHang.ThemSpVaoGioHang(GioHang))
+            if (KH.ThemSpVaoGioHang(GioHang))
             {
                 return true;
             }
             return false;
         }
-
     }
 }

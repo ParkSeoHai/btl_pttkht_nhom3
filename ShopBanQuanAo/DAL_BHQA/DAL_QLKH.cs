@@ -54,10 +54,5 @@ namespace DAL_BHQA
         {
             return QuanLy.TimKiemKH_TenKH(txtMaKH);
         }
-        // Tìm kiếm theo loại khách hàng
-        public DataTable TimKiemKH_LoaiKH(string txtMaKH)
-        {
-            return QuanLy.TimKiemKH_LoaiKH(txtMaKH);
-        }
     }
 }

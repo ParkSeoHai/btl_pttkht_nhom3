@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblTongSoTien = new System.Windows.Forms.Label();
             this.lblTienDichVu = new System.Windows.Forms.Label();
             this.lblTienShip = new System.Windows.Forms.Label();
@@ -40,11 +39,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDiaChiNhanHang = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSoDienThoai = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -68,7 +62,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.lblTongSoTien);
             this.groupBox1.Controls.Add(this.lblTienDichVu);
             this.groupBox1.Controls.Add(this.lblTienShip);
@@ -77,24 +70,12 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtDiaChiNhanHang);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtSoDienThoai);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(776, 326);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(350, 142);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(379, 30);
-            this.dateTimePicker1.TabIndex = 15;
             // 
             // lblTongSoTien
             // 
@@ -168,50 +149,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Tổng Số Tiền Hàng:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(240, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Nhập Ngày Nhận Hàng:";
-            // 
-            // txtDiaChiNhanHang
-            // 
-            this.txtDiaChiNhanHang.Location = new System.Drawing.Point(350, 93);
-            this.txtDiaChiNhanHang.Name = "txtDiaChiNhanHang";
-            this.txtDiaChiNhanHang.Size = new System.Drawing.Size(379, 30);
-            this.txtDiaChiNhanHang.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(214, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nhập Số Điện Thoại:";
-            // 
-            // txtSoDienThoai
-            // 
-            this.txtSoDienThoai.Location = new System.Drawing.Point(350, 46);
-            this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(379, 30);
-            this.txtSoDienThoai.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nhập Địa Chỉ Nhận Hàng";
-            // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -256,11 +193,6 @@
 
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtDiaChiNhanHang;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSoDienThoai;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -272,6 +204,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -30,7 +30,6 @@ namespace DTO_BHQA
         DataTable TimKiem(string query, string variable, string txtTimKiem);
         DataTable TimKiemKH_MaKH(string txtMaKH);
         DataTable TimKiemKH_TenKH(string txtTenKH);
-        DataTable TimKiemKH_LoaiKH(string txtLoaiKH);
 
         // Quản lý hóa đơn
         bool QuanLyHD(HoaDon HD, string query);
@@ -103,7 +102,9 @@ namespace DTO_BHQA
                 cmd.Parameters.AddWithValue("MaSP", SP.MaSp);
                 cmd.Parameters.AddWithValue("TenSP", SP.TenSp);
                 cmd.Parameters.AddWithValue("GiaSP", SP.GiaSp);
-                cmd.Parameters.AddWithValue("DonViTinh", SP.DonViTinh);
+                cmd.Parameters.AddWithValue("NgayThem", SP.NgayThem);
+                cmd.Parameters.AddWithValue("GiamGia", SP.GiamGia);
+                cmd.Parameters.AddWithValue("UrlImg", SP.UrlImg);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     return true;
@@ -116,7 +117,7 @@ namespace DTO_BHQA
         // Phương thức thêm sản phẩm
         public bool ThemSp(SanPham SP, QuanLySanPham QLSP)
         {
-            string queryInsert = "Insert into SanPham values (@MaSP, @TenSP, @GiaSP, @DonViTinh)";
+            string queryInsert = "Insert into SanPham values (@MaSP, @TenSP, @GiaSP, @NgayThem, @GiamGia, @UrlImg)";
             string queryInsertQLSP = "Insert into QuanLySanPham values (@MaQL, @MaSP)";
             if (QuanLySP(SP, queryInsert) && ThemQLSP(QLSP, queryInsertQLSP))
             {
@@ -127,7 +128,7 @@ namespace DTO_BHQA
         // Phương thức sửa sản phẩm
         public bool SuaSp(SanPham SP)
         {
-            string queryUpdate = "Update SanPham set TenSP = @TenSP, GiaSP = @GiaSP, DonViTinh = @DonViTinh where MaSP = @MaSP";
+            string queryUpdate = "Update SanPham set TenSP = @TenSP, GiaSP = @GiaSP, NgayThem = @NgayThem, GiamGia = @GiamGia, urlImg = @UrlImg where MaSP = @MaSP";
             if (QuanLySP(SP, queryUpdate))
             {
                 return true;
@@ -208,8 +209,6 @@ namespace DTO_BHQA
                 cmd.Parameters.AddWithValue("NgaySinh", KH.ngaySinh);
                 cmd.Parameters.AddWithValue("DiaChi", KH.diaChi);
                 cmd.Parameters.AddWithValue("SDT", KH.sdt);
-                cmd.Parameters.AddWithValue("LoaiKH", KH.LoaiKH);
-                cmd.Parameters.AddWithValue("SoTien", KH.SoTien);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     return true;
@@ -222,7 +221,7 @@ namespace DTO_BHQA
         // Thêm khách hàng
         public bool ThemKH(KhachHang KH, QuanLyKhachHang QLKH)
         {
-            string queryInsert = "Insert into KhachHang values (@MaKH, @HoTen, @GioiTinh, @NgaySinh, @DiaChi, @SDT, @LoaiKH, @SoTien)";
+            string queryInsert = "Insert into KhachHang values (@MaKH, @HoTen, @GioiTinh, @NgaySinh, @DiaChi, @SDT)";
             string queryInsertQLKH = "Insert into QuanLyKhachHang values (@MaQL, @MaKH)";
             if (QuanLyKH(KH, queryInsert) && ThemQLKH(QLKH, queryInsertQLKH))
             {
@@ -233,7 +232,7 @@ namespace DTO_BHQA
         // Sửa khách hàng
         public bool SuaKH(KhachHang KH)
         {
-            string queryUpdate = "Update KhachHang set HoTen = @HoTen, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh, DiaChi = @DiaChi, SDT = @SDT, LoaiKH = @LoaiKH, SoTien = @SoTien WHERE MaKH = @MaKH";
+            string queryUpdate = "Update KhachHang set HoTen = @HoTen, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh, DiaChi = @DiaChi, SDT = @SDT WHERE MaKH = @MaKH";
             if (QuanLyKH(KH, queryUpdate))
             {
                 return true;
@@ -284,12 +283,6 @@ namespace DTO_BHQA
         {
             string queryTimKiemTenKH = "Select * from KhachHang where HoTen = @HoTen";
             return TimKiem(queryTimKiemTenKH, "HoTen", txtTenKH);
-        }
-        // Tìm kiếm theo loại khách hàng
-        public DataTable TimKiemKH_LoaiKH(string txtLoaiKH)
-        {
-            string querySelectMaKH = "Select * from KhachHang where LoaiKH = @LoaiKH";
-            return TimKiem(querySelectMaKH, "LoaiKH", txtLoaiKH);
         }
 
         // Quản lý hóa đơn

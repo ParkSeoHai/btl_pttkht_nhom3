@@ -130,20 +130,26 @@ namespace GUI_BHQA
         // Sự kiện xóa hóa đơn
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
+            if(dtGridQLHD.Rows.Count > 1)
             {
-                HoaDon HD = Create_HD();
-                if (BUS_QLHD.XoaHD(HD))
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
                 {
-                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Clear_Text();
-                    Load_dtGridQLHD(BUS_QLHD.getData());
+                    HoaDon HD = Create_HD();
+                    if (BUS_QLHD.XoaHD(HD))
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Clear_Text();
+                        Load_dtGridQLHD(BUS_QLHD.getData());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Xóa không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            } else
+            {
+                MessageBox.Show("Dữ liệu trống, vui lòng thử lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         // Sự kiện tìm kiếm 

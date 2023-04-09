@@ -24,7 +24,7 @@ namespace GUI_BHQA
         private void frmThongkeSP_Moi_Load(object sender, EventArgs e)
         {
             // List report
-            List<SanPham> listReport = new List<SanPham>();
+            List<DTO_BHQA.SanPham> listReport = new List<DTO_BHQA.SanPham>();
 
             string query = "Select * from SanPham";
             SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
@@ -33,11 +33,13 @@ namespace GUI_BHQA
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                SanPham sp = new SanPham();
+                DTO_BHQA.SanPham sp = new DTO_BHQA.SanPham();
                 sp.MaSp = reader.GetString(0);
                 sp.TenSp = reader.GetString(1);
                 sp.GiaSp = reader.GetDouble(2);
-                sp.DonViTinh = reader.GetString(3);
+                sp.NgayThem = reader.GetString(3);
+                sp.GiamGia = reader.GetInt32(4);
+                sp.UrlImg = reader.GetString(5);
 
                 listReport.Add(sp);
             }

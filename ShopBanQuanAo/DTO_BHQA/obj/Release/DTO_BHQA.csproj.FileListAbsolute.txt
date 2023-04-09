@@ -1,0 +1,10 @@
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\obj\Release\DTO_BHQA.csproj.AssemblyReference.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\obj\Release\DTO_BHQA.csproj.SuggestedBindingRedirects.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\obj\Release\DTO_BHQA.Properties.Resources.resources
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\obj\Release\DTO_BHQA.csproj.GenerateResource.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\obj\Release\DTO_BHQA.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\bin\Release\DTO_BHQA.exe.config
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\bin\Release\DTO_BHQA.exe
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\bin\Release\DTO_BHQA.pdb
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\obj\Release\DTO_BHQA.exe
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\DTO_BHQA\obj\Release\DTO_BHQA.pdb

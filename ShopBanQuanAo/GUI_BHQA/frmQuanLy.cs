@@ -30,6 +30,8 @@ namespace GUI_BHQA
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            frmMain frmMain = new frmMain();
+            frmMain.Show();
             this.Close();
         }
 

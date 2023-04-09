@@ -15,24 +15,5 @@ namespace DTO_BHQA
             SqlConnection sqlCon = new SqlConnection(connStringHai2);
             return sqlCon;
         }
-
-        // Connect của Mạnh
-        public static SqlConnection chuoiKetNoiCua_XuanManh()
-        {
-            string s = @"Data Source = DESKTOP - LNJ99RH\SQLEXPRESS;Initial Catalog = ShopQuanAo; Integrated Security = True";
-            string strCon = s;
-            SqlConnection sqlCon = new SqlConnection(strCon);
-            sqlCon.Open();
-            return sqlCon;
-        }
-        // Connect của Duy
-        public class Connection
-        {
-            private static string strConnection = @"Data Source=VANDUY\SQLEXPRESS;Initial Catalog=ShopQuanAo1;Integrated Security=True";
-            public static SqlConnection GetSqlConnection()
-            {
-                return new SqlConnection(strConnection);
-            }
-        }
     }
 }

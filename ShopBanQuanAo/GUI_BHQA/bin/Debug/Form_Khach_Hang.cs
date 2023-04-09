@@ -8,7 +8,7 @@ namespace GUI_BHQA
 {
     public partial class Form_Khach_Hang : Form
     {
-        _KH_Them_San_Pham bus_nhan = new _KH_Them_San_Pham();
+        BUS_SP_GioHang BUS_SP_GioHang = new BUS_SP_GioHang();
         string MaKH;
         public Form_Khach_Hang() {
             InitializeComponent();
@@ -22,7 +22,8 @@ namespace GUI_BHQA
         private string getMaKH()
         {
             SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
-            string query = "SELECT KHACHHANG.MaKH FROM TaiKhoanDangNhap, KHACHHANG WHERE TaiKhoanDangNhap.MaKH = KHACHHANG.MaKH AND KHACHHANG.MaKH IN (SELECT MaKH FROM TaiKhoanDangNhap WHERE TenTK = @TenDN)";
+            string query = "SELECT KHACHHANG.MaKH FROM TaiKhoanDangNhap, KHACHHANG WHERE TaiKhoanDangNhap.MaKH = KHACHHANG.MaKH "
+                + "AND KHACHHANG.MaKH IN (SELECT MaKH FROM TaiKhoanDangNhap WHERE TenTK = @TenDN)";
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("TenDN", MaKH);
@@ -35,10 +36,11 @@ namespace GUI_BHQA
             conn.Close();
             return txtMaKH;
         }
+        // Thêm sản phẩm vào giỏ hàng
         private void ThemSanPham(string MaKH, string maSP)
         {
             GioHang gioHang = new GioHang(MaKH, maSP);
-            if (bus_nhan.Bus_Nhan_Data(gioHang))
+            if (BUS_SP_GioHang.ThemSP_GioHang(gioHang))
             {
                 MessageBox.Show("Thêm Thành Công");
             }
@@ -53,7 +55,8 @@ namespace GUI_BHQA
             lblGio.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
-        private void giỏHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        // Sự kiện click vào giỏ hàng
+        private void btnGioHang_Click(object sender, EventArgs e)
         {
             Form_GioHang smallForm = new Form_GioHang(getMaKH());
             smallForm.TopMost = true;
@@ -62,47 +65,14 @@ namespace GUI_BHQA
             smallForm.ShowDialog();
         }
 
-        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnVeChungToi_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn hãy gọi đường giây nóng: 0352593469 để được hỗ trợ sớm nhất.",
-            "Thông Báo",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Warning);
+            MessageBox.Show("Đang cập nhật...");
         }
 
-        private void vềChúngTôiToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnTroGiup_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang Cập Nhật...");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ThemSanPham(getMaKH(), lblMaSP001.Text);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ThemSanPham(getMaKH(), lblMaSP002.Text);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            ThemSanPham(getMaKH(), lblMaSP003.Text);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            ThemSanPham(getMaKH(), lblMaSP004.Text);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            ThemSanPham(getMaKH(), lblMaSP005.Text);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            ThemSanPham(getMaKH(), lblMaSP006.Text);
+            MessageBox.Show("Đang cập nhật...");
         }
     }
 }

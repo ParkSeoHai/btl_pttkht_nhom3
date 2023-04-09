@@ -26,8 +26,8 @@ namespace GUI_BHQA
             // Tạo list report
             List<SP_BanChayReport> listReport = new List<SP_BanChayReport>();
 
-            string query = "SELECT H.MaSP, S.TenSP, S.GiaSP, S.DonViTinh , SUM(SoLuong) AS SOLUONG FROM SANPHAM AS S, HOADON AS H" 
-                + " WHERE S.MaSP = H.MaSP GROUP BY H.MaSP, S.TenSP, S.GiaSP, S.DonViTinh HAVING SUM(SoLuong) >= 5";
+            string query = "SELECT H.MaSP, S.TenSP, S.GiaSP, S.NgayThem, S.GiamGia, SUM(SoLuong) AS SOLUONG FROM SANPHAM AS S, HOADON AS H" 
+                + " WHERE S.MaSP = H.MaSP GROUP BY H.MaSP, S.TenSP, S.GiaSP, S.NgayThem, S.GiamGia HAVING SUM(SoLuong) >= 5";
             SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
             conn.Open();
 
@@ -39,8 +39,9 @@ namespace GUI_BHQA
                 temp.MaSP = dataReader.GetString(0);
                 temp.TenSP = dataReader.GetString(1);
                 temp.DonGia = dataReader.GetDouble(2);
-                temp.DonViTinh = dataReader.GetString(3);
-                temp.SoLuong = dataReader.GetInt32(4);
+                temp.NgayThem = dataReader.GetString(3);
+                temp.GiamGia = dataReader.GetInt32(4);
+                temp.SoLuong = dataReader.GetInt32(5);
 
                 listReport.Add(temp);
             }

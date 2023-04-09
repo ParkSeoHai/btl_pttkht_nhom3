@@ -51,8 +51,6 @@ namespace GUI_BHQA
                 }
                 txtDiaChi.Text = dtGridQLKH.Rows[index].Cells[4].Value.ToString().Trim();
                 txtSDT.Text = dtGridQLKH.Rows[index].Cells[5].Value.ToString().Trim();
-                txtLoaiKH.Text = dtGridQLKH.Rows[index].Cells[6].Value.ToString().Trim();
-                txtSoTien.Text = dtGridQLKH.Rows[index].Cells[7].Value.ToString().Trim();
             }
         }
 
@@ -85,8 +83,7 @@ namespace GUI_BHQA
         private bool Check_TextBox()
         {
             if (string.IsNullOrWhiteSpace(txtMKH.Text) || string.IsNullOrWhiteSpace(txtTenKH.Text) ||
-                string.IsNullOrWhiteSpace(txtDiaChi.Text) || string.IsNullOrWhiteSpace(txtSDT.Text) ||
-                string.IsNullOrWhiteSpace(txtLoaiKH.Text) || string.IsNullOrWhiteSpace(txtSoTien.Text))
+                string.IsNullOrWhiteSpace(txtDiaChi.Text) || string.IsNullOrWhiteSpace(txtSDT.Text))
             {
                 return false;
             }
@@ -105,8 +102,6 @@ namespace GUI_BHQA
             dateNgaySinh.Value = DateTime.Now;
             txtDiaChi.Text = "";
             txtSDT.Text = "";
-            txtLoaiKH.Text = "";
-            txtSoTien.Text = "";
         }
 
         // Hàm tạo đối tượng khách hàng
@@ -122,18 +117,7 @@ namespace GUI_BHQA
             string year = dateNgaySinh.Value.Year.ToString();
             string ngaySinh = day + "/" + month + "/" + year;
 
-            double soTien;
-            try
-            {
-                soTien = Convert.ToDouble(txtSoTien.Text);
-            }
-            catch
-            {
-                soTien = 0;
-            }
-
-
-            KhachHang KH = new KhachHang(txtMKH.Text, txtTenKH.Text, gioiTinh, ngaySinh, txtDiaChi.Text, txtSDT.Text, txtLoaiKH.Text, soTien);
+            KhachHang KH = new KhachHang(txtMKH.Text, txtTenKH.Text, gioiTinh, ngaySinh, txtDiaChi.Text, txtSDT.Text);
             return KH;
         }
         // Hàm tạo đối tượng quản lý khách hàng
@@ -194,19 +178,25 @@ namespace GUI_BHQA
         {
             KhachHang KH = Create_KH();
             QuanLyKhachHang QLKH = Create_QLKH();
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
+            if(dtGridQLKH.Rows.Count > 1)
             {
-                if (BUS_QLKH.XoaKH(KH, QLKH))
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
                 {
-                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Clear_TextBox();
-                    Load_dtGridQLKH(BUS_QLKH.getData());
+                    if (BUS_QLKH.XoaKH(KH, QLKH))
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Clear_TextBox();
+                        Load_dtGridQLKH(BUS_QLKH.getData());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Xóa không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            } else
+            {
+                MessageBox.Show("Dữ liệu trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         // Hàm tìm kiếm chung
@@ -233,11 +223,6 @@ namespace GUI_BHQA
             else if (cbTimKiem.Text == "Tìm kiếm theo Họ tên")
             {
                 DataTable dt = BUS_QLKH.TimKiemKH_TenKH(txtTimKiem.Text);
-                TimKiem(dt);
-            }
-            else if (cbTimKiem.Text == "Tìm kiếm theo Loại KH")
-            {
-                DataTable dt = BUS_QLKH.TimKiemKH_LoaiKH(txtTimKiem.Text);
                 TimKiem(dt);
             }
         }

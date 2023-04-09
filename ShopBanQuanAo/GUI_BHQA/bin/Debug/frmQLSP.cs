@@ -54,14 +54,24 @@ namespace GUI_BHQA
                 txtMSP.Text = dtGridQLSP.Rows[index].Cells[0].Value.ToString().Trim();
                 txtTenSP.Text = dtGridQLSP.Rows[index].Cells[1].Value.ToString().Trim();
                 txtGiaSP.Text = dtGridQLSP.Rows[index].Cells[2].Value.ToString().Trim();
-                txtDVT.Text = dtGridQLSP.Rows[index].Cells[3].Value.ToString().Trim();
+                try
+                {
+                    dateNgayThem.Value = Convert.ToDateTime(dtGridQLSP.Rows[index].Cells[3].Value);
+                }
+                catch
+                {
+                    dateNgayThem.Value = DateTime.Now;
+                }
+                txtGiamGia.Text = dtGridQLSP.Rows[index].Cells[4].Value.ToString().Trim();
+                txtUrl.Text = dtGridQLSP.Rows[index].Cells[5].Value.ToString().Trim();
             }
         }
         // Hàm check text box 
         public bool Check_TextBox()
         {
             if (string.IsNullOrWhiteSpace(txtMSP.Text) || string.IsNullOrWhiteSpace(txtTenSP.Text) ||
-                string.IsNullOrWhiteSpace(txtGiaSP.Text) || string.IsNullOrWhiteSpace(txtDVT.Text))
+                string.IsNullOrWhiteSpace(txtGiaSP.Text) || string.IsNullOrWhiteSpace(txtGiamGia.Text) ||
+                string.IsNullOrWhiteSpace(txtUrl.Text))
             {
                 return false;
             }
@@ -76,12 +86,17 @@ namespace GUI_BHQA
             txtMSP.Text = "";
             txtTenSP.Text = "";
             txtGiaSP.Text = "";
-            txtDVT.Text = "";
+            txtGiamGia.Text = "";
+            txtUrl.Text = "";
         }
         // Hàm tạo đối tượng sp
-        private SanPham Create_SP()
+        private DTO_BHQA.SanPham Create_SP()
         {
-            SanPham SP = new SanPham(txtMSP.Text, txtTenSP.Text, Convert.ToDouble(txtGiaSP.Text), txtDVT.Text);
+            string day = dateNgayThem.Value.Day.ToString().Length == 1 ? $"0{dateNgayThem.Value.Day}" : dateNgayThem.Value.Day.ToString();
+            string month = dateNgayThem.Value.Month.ToString().Length == 1 ? $"0{dateNgayThem.Value.Month}" : dateNgayThem.Value.Month.ToString();
+            string year = dateNgayThem.Value.Year.ToString();
+            string NgayThem = $"{day}/{month}/{year}";
+            DTO_BHQA.SanPham SP = new DTO_BHQA.SanPham(txtMSP.Text, txtTenSP.Text, Convert.ToDouble(txtGiaSP.Text), NgayThem, Convert.ToInt32(txtGiamGia.Text), txtUrl.Text);
             return SP;
         }
         // Hàm tạo đối tượng qlsp
@@ -95,7 +110,7 @@ namespace GUI_BHQA
         {
             if (Check_TextBox())
             {
-                SanPham SP = Create_SP();
+                DTO_BHQA.SanPham SP = Create_SP();
                 QuanLySanPham QLSP = Create_QLSP();
                 if (BUS_QLSP.ThemSP(SP, QLSP))
                 {
@@ -105,7 +120,7 @@ namespace GUI_BHQA
                 }
                 else
                 {
-                    MessageBox.Show("Thêm không thành công, trùng mã khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thêm không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -121,7 +136,7 @@ namespace GUI_BHQA
             {
                 if (Check_TextBox())
                 {
-                    SanPham SP = Create_SP();
+                    DTO_BHQA.SanPham SP = Create_SP();
                     if (BUS_QLSP.SuaSP(SP))
                     {
                         MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -142,21 +157,27 @@ namespace GUI_BHQA
         // Xóa sản phẩm
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            if (result == DialogResult.OK)
+            if(dtGridQLSP.Rows.Count > 1)
             {
-                SanPham SP = Create_SP();
-                QuanLySanPham QLSP = Create_QLSP();
-                if (BUS_QLSP.XoaSP(SP, QLSP))
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
                 {
-                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Clear_TextBox();
-                    Load_dtGridQLSP(BUS_QLSP.GetData());
+                    DTO_BHQA.SanPham SP = Create_SP();
+                    QuanLySanPham QLSP = Create_QLSP();
+                    if (BUS_QLSP.XoaSP(SP, QLSP))
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Clear_TextBox();
+                        Load_dtGridQLSP(BUS_QLSP.GetData());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Xóa không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            } else
+            {
+                MessageBox.Show("Dữ liệu trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         // Tìm kiếm sản phẩm
@@ -184,6 +205,16 @@ namespace GUI_BHQA
         private void btnHienThi_Click(object sender, EventArgs e)
         {
             Load_dtGridQLSP(BUS_QLSP.GetData());
+        }
+        // Sự kiện open file để chọn hình ảnh
+        private void btnChooseFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                txtUrl.Text = fdlg.FileName;
+            }
         }
     }
 }
