@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,16 +19,15 @@ namespace GUI_BHQA
     public partial class frmMain : Form
     {
         BUS_QLGH bus_qlgh = new BUS_QLGH();
-        BUS_TKDN bus_tkdn = new BUS_TKDN();
 
-        // Biến lưu tên kh nhận từ form đăng nhập
-        string tenTK;
+        // Biến lưu tên kh nhận từ form đăng nhập, mã khách hàng đang đăng nhập
+        string tenTK, maKH;
         public frmMain(string tbTenTK)
         {
             InitializeComponent();
             tenTK = tbTenTK;
+            maKH = Get_MaKH(tenTK);
         }
-
         public frmMain()
         {
             InitializeComponent();
@@ -80,10 +80,10 @@ namespace GUI_BHQA
             Label titleGia = new Label();
             titleGia.Parent = item;
             titleGia.Text = "Giá:";
-            titleGia.Location = new Point(13, 219);
+            titleGia.Location = new Point(5, 219);
             titleGia.BackColor = Color.White;
             titleGia.ForeColor = Color.Black;
-            titleGia.Size = new Size(52, 28);
+            titleGia.Size = new Size(45, 28);
             titleGia.Font = new Font("Segoe UI Semilight", 10, FontStyle.Bold);
             #endregion
 
@@ -92,10 +92,10 @@ namespace GUI_BHQA
             Label lbGia = new Label();
             lbGia.Parent = item;
             lbGia.Text = $"{giaSP}";
-            lbGia.Location = new Point(60, 219);
+            lbGia.Location = new Point(50, 219);
             lbGia.BackColor = Color.White;
             lbGia.ForeColor = Color.Black;
-            lbGia.Size = new Size(52, 28);
+            lbGia.Size = new Size(62, 28);
             lbGia.Font = new Font("Segoe UI Semilight", 10, FontStyle.Bold);
             #endregion
 
@@ -103,14 +103,14 @@ namespace GUI_BHQA
             // Tạo button mua hàng
             Button btnBuy = new Button();
             btnBuy.Parent = item;
-            btnBuy.Location = new Point(114, 211);
+            btnBuy.Location = new Point(120, 215);
             btnBuy.Text = "Buy";
             btnBuy.Name = $"{MaSP}";
-            btnBuy.BackColor = Color.FromArgb(94, 148, 255);
+            btnBuy.BackColor = Color.OrangeRed;
             btnBuy.ForeColor = Color.White;
             btnBuy.Font = new Font("Segoe UI Semilight", 10, FontStyle.Bold);
             btnBuy.Cursor = Cursors.Hand;
-            btnBuy.Size = new Size(78, 34);
+            btnBuy.Size = new Size(70, 28);
             btnBuy.Click += new EventHandler(btnBuy_click);
             listBtn.Add(btnBuy);
             #endregion
@@ -122,7 +122,6 @@ namespace GUI_BHQA
             string query = "Select * from SanPham";
             try
             {
-                int index = 0;
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -135,33 +134,108 @@ namespace GUI_BHQA
 
                     listMaSP.Add(maSP);
                     Create_Item(tenSP, url, giaSp, maSP);
-                    index++;
                 }
             }
             catch { }
             finally { conn.Close(); }
         }
-        // Hàm tạo đối tượng giỏ hàng
-        /*private GioHang Create_GH(string MaSP)
+
+        // Hàm lấy mã khách hàng đang đăng nhập
+        private string Get_MaKH(string txtTenTK)
         {
-            string MaKH = Get_MaKH();
-            GioHang gh = new GioHang(MaKH, MaSP);
-            return gh;
-        }*/
+            string MaKH;
+            SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
+            try
+            {
+                string query = "SELECT K.MaKH FROM TaiKhoanDangNhap AS T, KHACHHANG AS K "
+                + "WHERE T.MaKH = K.MaKH AND K.MaKH IN (SELECT MaKH FROM TaiKhoanDangNhap WHERE TenTK = @TenTK)";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("TenTK", txtTenTK);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    MaKH = reader.GetString(0);
+                    return MaKH;
+                }
+            }
+            catch { }
+            finally { conn.Close(); }
+            return null;
+        }
+
+        // Hàm tạo đối tượng giỏ hàng
+        private GioHang Create_GH(string MaSP)
+        {
+            if (maKH != null)
+            {
+                GioHang gh = new GioHang(maKH, MaSP);
+                return gh;
+            }
+            return null;
+        }
+
         // Hàm xử lý sự kiện click btn buy
         private void btnBuy_click(object sender, EventArgs e)
         {
-            // Lưu button người dùng click
-            /*var btnClick = (Button)sender;
-            foreach (string maSP in listMaSP)
+            if(!Check_TTKH(maKH))
             {
-                if (btnClick.Name == maSP)
+                DialogResult result = MessageBox.Show("Trước khi mua hàng chúng tôi cần thêm thông tin của bạn, Bạn có đồng ý?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
                 {
+                    frmThongTinKhachHang frmTTKH = new frmThongTinKhachHang(maKH);
+                    frmTTKH.ShowDialog();
                     
                 }
-            }*/
+            } else
+            {
+                // Lưu button người dùng click
+                var btnClick = (Button)sender;
+                foreach (string maSP in listMaSP)
+                {
+                    if (btnClick.Name == maSP)
+                    {
+                        GioHang item = Create_GH(maSP);
+                        if (bus_qlgh.ThemSPGioHang(item))
+                        {
+                            MessageBox.Show("Thêm thành công");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sản phẩm đã có trong giỏ hàng");
+                        }
+                    }
+                }
+            }
         }
 
+        // Hàm kiểm tra thông tin khách hàng
+        private bool Check_TTKH(string txtMaKH)
+        {
+            string query = "Select GioiTinh, NgaySinh, DiaChi, SDT from KhachHang where MaKH = @MaKH";
+            SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("MaKH", txtMaKH);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    string gioiTinh = reader.GetString(0);
+                    string ngaySinh = reader.GetString(1);
+                    string diaChi = reader.GetString(2);
+                    string sdt = reader.GetString(3);
+                    if (gioiTinh != "" && ngaySinh != "" && diaChi != "" && sdt != "")
+                    {
+                        return true;
+                    }
+                }
+            }
+            catch { }
+            finally { conn.Close(); }
+            return false;
+        }
         // Sự kiện click giỏ hàng
         private void btnGioHang_Click(object sender, EventArgs e)
         {
@@ -169,7 +243,8 @@ namespace GUI_BHQA
             btnTrangChu.Checked = false;
             btnQuanLy.Checked = false;
             btnLienHe.Checked = false;
-
+            frmGioHang frmGH = new frmGioHang(maKH);
+            frmGH.ShowDialog();
         }
         // Sự kiện click quản lý
         private void btnQuanLy_Click(object sender, EventArgs e)
@@ -188,7 +263,7 @@ namespace GUI_BHQA
         // Sự kiện click Liên hệ
         private void btnLienHe_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Đang cập nhật...");
         }
         // Sự kiện click Trang chủ
         private void btnTrangChu_Click(object sender, EventArgs e)

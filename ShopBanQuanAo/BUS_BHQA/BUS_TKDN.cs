@@ -19,11 +19,5 @@ namespace BUS_BHQA
             }
             return false;
         }
-        // Lấy mã khách hàng
-        public string getMaKH(string txtTenTK)
-        {
-            string MaKH = dal_tkdn.Get_MaKH(txtTenTK);
-            return MaKH;
-        }
     }
 }

@@ -227,3 +227,4 @@ D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\x86\SqlServerSpatial
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\x64\SqlServerSpatial160.dll
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.csproj.Fody.RuntimeCopyLocal.cache
+D:\Workspace\C#\BTL_PTTKHT\ShopBanQuanAo\GUI_BHQA\obj\Debug\GUI_BHQA.frmThongTinKhachHang.resources

@@ -4,8 +4,8 @@ namespace DTO_BHQA
 {
     interface IKhachHang
     {
+        bool QuanLyGioHang(GioHang gioHang, string query);
         bool ThemSpVaoGioHang(GioHang gioHang);
-        void XoaSpTrongGioHang();
         void TimKiemSp();
         void MuaHang();
         void DatHang();
@@ -22,9 +22,8 @@ namespace DTO_BHQA
             _MaKH = MaKH;
         }
 
-        public bool ThemSpVaoGioHang(GioHang gioHang)
+        public bool QuanLyGioHang(GioHang gioHang, string query)
         {
-            string query = "Insert into GioHang values (@MaKH, @MaSP)";
             SqlConnection conn = new SqlConnection(DBConnect.connStringHai());
             try
             {
@@ -41,7 +40,15 @@ namespace DTO_BHQA
             finally { conn.Close(); }
             return false;
         }
-        public void XoaSpTrongGioHang() { }
+        public bool ThemSpVaoGioHang(GioHang gioHang)
+        {
+            string query = "Insert into GioHang values (@MaKH, @MaSP)";
+            if(QuanLyGioHang(gioHang, query))
+            {
+                return true;
+            }
+            return false;
+        }
         public void TimKiemSp() { }
         public void MuaHang() { }
         public void DatHang() { }

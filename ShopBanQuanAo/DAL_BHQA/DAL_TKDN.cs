@@ -31,28 +31,5 @@ namespace DAL_BHQA
             finally { conn.Close(); }
             return false;
         }
-        // Phương thức lấy MaKH
-        public string Get_MaKH(string txtTenTK)
-        {
-            string MaKH = "";
-            SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
-            try
-            {
-                string query = "SELECT K.MaKH FROM TaiKhoanDangNhap AS T, KHACHHANG AS K "
-                + "WHERE T.MaKH = K.MaKH AND K.MaKH IN (SELECT MaKH FROM TaiKhoanDangNhap WHERE TenTK = @TenTK)";
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("TenTK", txtTenTK);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while(reader.Read())
-                {
-                    MaKH = reader.GetString(0);
-                    return MaKH;
-                }
-            }
-            catch { }
-            finally { conn.Close() ; }
-            return MaKH;
-        }
     }
 }
