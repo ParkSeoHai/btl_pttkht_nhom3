@@ -26,10 +26,10 @@ namespace GUI_BHQA
             {
                 if (BUS_TKDN.Check_TKDN(tentk, matkhau) || (tbTenTk.Text == "Admin" && tbMK.Text == "123"))
                 {
+                    Hide();
                     // Truyền mã kh sang form main
                     frmMain frmMain = new frmMain(tbTenTk.Text);
                     frmMain.Show();
-                    this.Hide();
                 }
                 else
                 {

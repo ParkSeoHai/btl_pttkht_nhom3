@@ -17,15 +17,26 @@ namespace GUI_BHQA
     public partial class frmGioHang : Form
     {
         BUS_QLGH BUS_QLGH = new BUS_QLGH();
+
+        // Biến lưu mã kh đang đăng nhập
         string MaKH;
+        // Biến lưu tổng sản phẩm
+        int countSP = 0;
+        // Biến lưu tổng tiền sản phẩm
+        double sumPrice = 0;
+
         public frmGioHang(string txtMaKH)
         {
             InitializeComponent();
             MaKH = txtMaKH;
         }
+        // Form load
         private void frmGioHang_Load(object sender, EventArgs e)
         {
             GetSP_GioHang();
+            txtCountSP.Text = countSP.ToString();
+            comboPhuongThucTT.SelectedIndex = 0;
+            txtTongTien.Text = sumPrice.ToString();
         }
 
         // List lưu các btn xóa 
@@ -73,7 +84,7 @@ namespace GUI_BHQA
             giaSp.BackColor = Color.Transparent;
             giaSp.Font = new Font("Segoe UI Semibold", 10, FontStyle.Bold);
             giaSp.Location = new Point(184, 43);
-            giaSp.Size = new Size(52, 21);
+            giaSp.Size = new Size(100, 21);
             #endregion
 
             #region 
@@ -131,6 +142,8 @@ namespace GUI_BHQA
                     string urlImg = reader.GetString(2);
                     double giaSP = reader.GetDouble(3);
                     Create_Item(maSP, tenSP, giaSP, urlImg);
+                    ++countSP;
+                    sumPrice += giaSP;
                 }
             } catch { }
             finally { conn.Close(); }
@@ -168,6 +181,12 @@ namespace GUI_BHQA
             catch { }
             finally { conn.Close(); }
             return false;
+        }
+
+        // Sự kiện đặt hàng
+        private void btnDatHang_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đặt hàng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

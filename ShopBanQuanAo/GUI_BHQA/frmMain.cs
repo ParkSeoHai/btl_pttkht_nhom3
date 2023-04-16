@@ -185,7 +185,6 @@ namespace GUI_BHQA
                 {
                     frmThongTinKhachHang frmTTKH = new frmThongTinKhachHang(maKH);
                     frmTTKH.ShowDialog();
-                    
                 }
             } else
             {
@@ -251,9 +250,9 @@ namespace GUI_BHQA
         {
             if(tenTK == "Admin")
             {
+                Hide();
                 frmQuanLy frmQL = new frmQuanLy();
                 frmQL.Show();
-                this.Close();
             }
             else
             {
@@ -265,6 +264,29 @@ namespace GUI_BHQA
         {
             MessageBox.Show("Đang cập nhật...");
         }
+
+        // Đăng xuất tài khoản
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn Có Chắc Chắn Muốn Thoát không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                foreach (Form form in Application.OpenForms)
+                {
+                    // Nếu Form đang hiển thị, đóng Form
+                    if (form.Visible)
+                    {
+                        form.Close();
+                    }
+                    // Nếu Form đã bị ẩn, giải phóng tài nguyên
+                    else
+                    {
+                        form.Dispose();
+                    }
+                }
+            }
+        }
+
         // Sự kiện click Trang chủ
         private void btnTrangChu_Click(object sender, EventArgs e)
         {

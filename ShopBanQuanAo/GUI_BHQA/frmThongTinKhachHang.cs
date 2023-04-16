@@ -37,27 +37,25 @@ namespace GUI_BHQA
         {
             if(Check_TextBox())
             {
-                KhachHang KH;
-                do
+                string gioiTinh;
+                if (radioNam.Checked)
                 {
-                    string gioiTinh;
-                    if (radioNam.Checked)
-                    {
-                        gioiTinh = radioNam.Text;
-                    }
-                    else
-                    {
-                        gioiTinh = radioNu.Text;
-                    }
-                    string day = dateNS.Value.Day.ToString();
-                    string month = dateNS.Value.Month.ToString();
-                    string year = dateNS.Value.Year.ToString();
-                    string ngaySinh = $"{day}/{month}/{year}";
-
-                    KH = new KhachHang(MaKH, txtHoTen.Text, gioiTinh, ngaySinh, txtDiaChi.Text, txtSDT.Text);
-                } while (!BUS_QLKH.SuaKH(KH));
-                MessageBox.Show("Gửi thông tin thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+                    gioiTinh = radioNam.Text;
+                }
+                else
+                {
+                    gioiTinh = radioNu.Text;
+                }
+                string day = dateNS.Value.Day.ToString();
+                string month = dateNS.Value.Month.ToString();
+                string year = dateNS.Value.Year.ToString();
+                string ngaySinh = $"{day}/{month}/{year}";
+                KhachHang KH = new KhachHang(MaKH, txtHoTen.Text, gioiTinh, ngaySinh, txtDiaChi.Text, txtSDT.Text);
+                if (BUS_QLKH.SuaKH(KH))
+                {
+                    MessageBox.Show("Gửi thông tin thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
             }
         }
     }

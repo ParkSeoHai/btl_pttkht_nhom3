@@ -33,7 +33,7 @@ namespace GUI_BHQA
             {
                 Random rd = new Random();
                 MaKH = rd.Next(1, 100).ToString().Length == 1 ? $"00{rd.Next(1, 100)}" : rd.Next(1, 100).ToString();
-            } while(!BUS_DangKy.Check_MaKH(MaKH));
+            } while(BUS_DangKy.Check_MaKH(MaKH));
 
             var TKDN = new TaiKhoanDangNhap(tbTenTk.Text, tbMK.Text, tbEmail.Text, MaKH);
             return TKDN;
