@@ -407,6 +407,12 @@
       <DependentUpon>FrmQuanLyKhachHang.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="frmQuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuenMK.Designer.cs">
+      <DependentUpon>frmQuenMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThongKeSP_HOT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -484,6 +490,9 @@
     <EmbeddedResource Include="FrmQuanLyKhachHang.resx">
       <DependentUpon>FrmQuanLyKhachHang.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuenMK.resx">
+      <DependentUpon>frmQuenMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>

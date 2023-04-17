@@ -4,12 +4,9 @@ namespace DTO_BHQA
 {
     interface IKhachHang
     {
+        string LayLaiPass(string txtEmail);
         bool QuanLyGioHang(GioHang gioHang, string query);
         bool ThemSpVaoGioHang(GioHang gioHang);
-        void TimKiemSp();
-        void MuaHang();
-        void DatHang();
-        void ThanhToan();
     }
     public class KhachHang : Person, IKhachHang
     {
@@ -49,9 +46,22 @@ namespace DTO_BHQA
             }
             return false;
         }
-        public void TimKiemSp() { }
-        public void MuaHang() { }
-        public void DatHang() { }
-        public void ThanhToan() { }
+        // Lấy lại mk cho khách hàng
+        public string LayLaiPass(string txtEmail)
+        {
+            string Password = "";
+            string query = "Select MatKhau from TaiKhoanDangNhap where Email = @Email";
+            SqlConnection conn = DBConnect.chuoiKetNoiCua_Hai();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("Email", txtEmail);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if(reader.Read())
+            {
+                Password = reader.GetString(0);
+            }
+            conn.Close();
+            return Password;
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace GUI_BHQA
             {
                 if (BUS_TKDN.Check_TKDN(tentk, matkhau) || (tbTenTk.Text == "Admin" && tbMK.Text == "123"))
                 {
+                    MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Hide();
                     // Truyền mã kh sang form main
                     frmMain frmMain = new frmMain(tbTenTk.Text);
@@ -40,7 +41,9 @@ namespace GUI_BHQA
         // Sự kiên quên Mật khẩu
         private void btnQuenMK_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang cập nhật...");
+            Hide();
+            frmQuenMK frmQMK = new frmQuenMK();
+            frmQMK.Show();
         }
         // Sự kiện đăng ký
         private void btnDangKy_Click(object sender, EventArgs e)

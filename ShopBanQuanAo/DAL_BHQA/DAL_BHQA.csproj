@@ -52,6 +52,7 @@
     <Compile Include="DAL_QLHD.cs" />
     <Compile Include="DAL_QLKH.cs" />
     <Compile Include="DAL_QLSP.cs" />
+    <Compile Include="DAL_QuenMK.cs" />
     <Compile Include="DAL_TKDN.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
